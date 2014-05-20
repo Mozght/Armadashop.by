@@ -1,0 +1,51 @@
+<modification>
+	
+	<id>Highlight active link in top menu</id>
+	<version>1.0</version>
+	<vqmver>2.1</vqmver>
+	<author>everthemes.com</author>
+	
+	<file name="catalog/controller/common/header.php">
+
+		<operation>
+			<search position="after"><![CDATA['children' => $children_data,]]></search>
+			<add><![CDATA[
+				'category_id' => $category['category_id'],
+				'thumb' => $img,
+				]]></add>
+		</operation>
+
+		<operation>
+			<search position="before"><![CDATA[// Menu]]></search>
+			<add><![CDATA[
+				if (isset($this->request->get['path'])) {
+					$parts = explode('_', (string)$this->request->get['path']);
+				} else {
+					$parts = array();
+				}
+
+				if (isset($parts[0])) {
+					$this->data['category_id'] = $parts[0];
+				} else {
+					$this->data['category_id'] = 0;
+				}
+				]]></add>
+		</operation>
+
+	</file>
+
+	<file name="catalog/view/theme/*/template/common/header.tpl">
+		<operation>
+			<search position="replace" ><![CDATA[<li id="m<?php echo $linkidcount; ?>" <?php if ($category['children']) { ?> class="dropdown"<?php } ?>><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>]]></search>
+			<add><![CDATA[
+				<?php
+				$menu_class='';
+				if ($category['children']) $menu_class='dropdown';
+				if ($category['category_id'] == $category_id) $menu_class.=' active';
+				?>
+				<li id="m<?php echo $linkidcount; ?>" class="<?php echo $menu_class; ?>"><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a>
+				]]></add>
+		</operation>
+	</file>
+	
+</modification>

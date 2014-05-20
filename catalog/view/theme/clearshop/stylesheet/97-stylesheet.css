@@ -1,0 +1,71 @@
+body {background: url('http://armadashop.by/image/data/fire-1.jpg') no-repeat center bottom;
+	background-color:#000 !important;
+	-webkit-background-size: contain; 
+    -moz-background-size: contain;   
+    -o-background-size: contain;     
+    background-size: contain; color:#f1f1f1; }
+	a {color:#d9d9d9 !important;}
+	a:hover {color:#fff !important;}
+	#footerpre, #footer, #footend {
+		background:none;
+	}
+	.dropdown-menu li > a {
+color: #333 !important;
+}	
+	.dropdown-menu li > a:hover {
+color: #ddd !important;
+}
+	#footerpre h3, #footer h3 {color:#f1f1f1;}
+	.box {border: 0;}
+	.box-category  ul  li  a {color:#555 !important;}
+	body .page-header h1 {color:#d1d1d1 !important;}
+	.category-info {
+		color: #B9B9B9;
+	}
+	.page-header {border-bottom: 0;}
+	.box {background: #fff;}
+	#footerpre .box {background:none;}
+	#footerpre {
+border-top: 0;
+}
+#footend .container {
+border-top: 0;
+border-bottom: 0;
+}
+#footend .container {border-top:0;}
+#footer .info, #footer .info p, #copy, #copy p {
+color: #fff;
+}
+.cart-total .total {
+color: #fff !important;
+}
+#footerpre .container {
+border-bottom: 0;
+}
+
+.box-heading, .contentset,.subcat a, .subcat_thumb a  {border:0;}
+
+.product-grid .grid-box .button, .product-grid .grid-box .rating, .product-grid .grid-box .outstock, .product-grid .grid-box .links, .product-slider ul li .button, .product-slider ul li .rating {
+margin-top: 4px;
+visibility: hidden;
+color: #000 !important;
+}
+
+.ui-selectmenu.ui-state-hover .ui-selectmenu-status, .ui-selectmenu-menu a {color:#555 !important}
+.detailscol {
+text-align: center;
+color: #d9d9d9;
+}	
+.product-info .rightcol .price-normal, .product-info .rightcol .price-new {
+font-size: 28px;
+line-height: 28px;
+color:#fff;
+}
+
+.tab-content {color:#f1f1f1;}
+.prevnext .pager li a:hover {
+background: #444;
+}
+
+.phone li, .phone .phone_number  {color:#fff;}
+.grid-box .name a, .product-list .name a, .product-slider .name a {color:#fff !important;}

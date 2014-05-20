@@ -1,0 +1,42 @@
+---------- Date: 2013-10-23 15:55:36 ~ IP : 46.53.195.71 ----------
+REQUEST URI : /admin/index.php?route=common/home&amp;token=d52ab9705aadde02f52968726eeec913
+MOD DETAILS:
+   modFile   : /home/armadash/public_html/vqmod/xml/stock_status.xml
+   id        : Show stock status on product listings
+   version   : 1.0
+   vqmver    : 2.1.5
+   author    : Everthemes
+VQModObject::parseMods - Could not resolve path for [catalog/controller/module/latest.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-10-23 18:59:11 ~ IP : 86.57.186.97 ----------
+REQUEST URI : /better-blondes
+MOD DETAILS:
+   modFile   : /home/armadash/public_html/vqmod/xml/chain_155 .xml
+   id        : chain
+   version   : 1.4BETA two parents
+   vqmver    : 1.0
+   author    : ocextensions.co.uk
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div id="option-<?php echo $option['product_option_id']; ?>" class="option">
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-10-23 18:59:11 ~ IP : 54.234.94.231 ----------
+REQUEST URI : /mens/t-shirt/live-today
+MOD DETAILS:
+   modFile   : /home/armadash/public_html/vqmod/xml/chain_155 .xml
+   id        : chain
+   version   : 1.4BETA two parents
+   vqmver    : 1.0
+   author    : ocextensions.co.uk
+
+File Name    : catalog/view/theme/*/template/product/product.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): <div id="option-<?php echo $option['product_option_id']; ?>" class="option">
+
+----------------------------------------------------------------------
+
+

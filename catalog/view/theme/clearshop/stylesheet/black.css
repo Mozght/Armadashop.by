@@ -1,0 +1,310 @@
+/*  
+Theme Name: Clearshop
+Version: 1.0
+Description: All Black skin
+*/
+
+.container .container-inner {
+	padding: 0;
+}
+
+#logo-white { display: inline !important; }
+#logo-black { display: none !important; }
+
+#maincontent.span12 .slideshow, 
+#content-wrapper .slideshow,
+.navbar,
+#thickbar { margin-left: 0; margin-right: 0; }
+
+html,body,
+.flexslider,
+.contentset span,
+.htabs a.selected,
+.htabs a.selected:hover,
+.form-actions,
+.nav-tabs>.active>a, 
+.nav-tabs>.active>a:hover {
+	color: #ddd;
+	background: #000;
+}
+#content-wrapper > .container {
+	background: transparent;
+	border: 0;
+}
+
+.product-info .cart,
+#footerpre, #footer, #footend {
+	background-color: #060606;
+}
+.sitemap-info ul li {
+	border-color: #151515;
+}
+.contentset,
+.products-slider ul li .inner,
+.middle.span6 .mainborder,
+.sideleft.span9 .mainborder,
+.sideright.span9 .mainborder,
+.heading,
+.navbar,
+.nav-tabs,
+.htabs,
+.box-category>ul>li,
+.box-category>ul>li ul li a,
+.product-info .description,
+.product-info .options,
+.product-info .rightcol .price,
+.product-info .review,
+.product-info .share,
+.product-info .tags,
+.form-actions,
+.product-info .image-additional a,
+.checkout-content .method-type,
+.table-bordered,
+.table-bordered th, 
+.table-bordered td,
+.banner-carousel,
+#total-cart td,
+#cart .items tbody tr,
+#welcome a + a,
+.page-header,
+.checkout_steps,
+.box,
+.sidebar .grid-box,
+.product-info .cart,
+#cart-info .table,
+.product-list .name,
+.pagination,
+.product-filter .button:first-child,
+.product-compare,
+.prevnext .pager li + li a,
+.stock,
+.product-info .links span + span a,
+#add-review,
+#outernav,
+.product-slider .flex-direction-nav .flex-next,
+#toggle_sidebar,
+#wish-list .row-fluid + .row-fluid,
+#address-list .row-fluid + .row-fluid,
+.product-listing .links span + span a,
+.grid-box:hover .inner, .product-slider ul li:hover .inner,
+.product-row:hover div.inner,
+ul.box-filter span.filter-group,
+#footerpre .container,
+#footend .container,
+#footerpre,
+.cart-total .total,
+.table thead td, .table thead th {
+	border-color: #333;
+}
+#cart .content .inner,
+#cart .items tr+tr,
+.checkout_steps.active,
+#cart-text,
+.search-criteria,
+.grid-box:hover .inner2, .product-slider ul li:hover .inner2,
+.product-row:hover div.inner2  {
+	border-color: #666;
+}
+.grid-box .image,
+.product-row .image,
+.product-info .image,
+.product-info .image-additional a,
+.product-slider ul li .image {
+	background: #fff;
+}
+
+.grid-box .name,
+.product-row .inner2,
+.product-slider ul li .name,
+#header,
+#footend {
+	border-color: transparent;
+}
+.grid-box .onsale, .product-slider ul li .inner .onsale {
+	margin-top: -24px;
+}
+a, a:visited, a:hover,
+.grid-box .name a,
+.grid-box .inner:hover .name a,
+.box-category > ul > li > a,
+.navbar .nav > li > a,
+.product-info .rightcol .price,
+.product-info .options,
+.checkout_steps.active .checkout-heading,
+.dropd span.selected,
+#cart a.button-cart,
+#style-switcher a,
+.pagination ul>li>a,
+.pagination ul>li>span,
+#footer h3,
+#footer h4,
+.cart-total a,
+.cart-total a:hover ,
+.cart-total .total,
+.navbar .nav>.active>a,
+.navbar .nav>.active>a:hover,
+.navbar .nav>.active>a:focus,
+a.button.button-link,
+a.button.button-inverse,
+a.button.button-cart,
+.page-header h1,
+.product-filter .button i{
+	color: #fff;
+}
+.dropd:hover span.selected,
+.navbar .nav > li > a:hover {
+	color: #ccc;
+}
+#footer a,
+.breadcrumb,
+.breadcrumb a {
+	color: #777;
+}
+.product-info .tags a,
+.success a,
+a.button,
+.dropd li a,
+#colorbox {
+	color: #000;
+}
+.checkout_steps .step,
+.prevnext .pager li a:hover,
+#cart-text,
+.navbar .nav>.active>a,
+.navbar .nav>.active>a:hover,
+.navbar .nav>.active>a:focus,
+.navbar .nav > li > a:hover,
+.product-slider .flex-direction-nav a:hover {
+	background-color: #222;
+}
+.nav-tabs>li>a:hover,
+.box-category a:hover,
+.htabs a:hover,
+.box.category-accordion,
+.box.account,
+.box.mod-information,
+.box.affiliate,
+#cart.active .content,
+.product-list .quickview {
+	background: #111;
+	color: #fff;
+	border-color: transparent;
+}
+ #cart-info thead, #cart-info tfoot {
+ 	background: #040404;
+ }
+ #cart-info th,
+ #cart-info .totals,
+ .subcat a, .subcat_thumb a {
+ 	border-left-color: #222;
+ }
+
+
+.pager li>a, .pager li>span,
+#cart .content,
+#cart.active .arrow,
+.subcat a:hover,
+#style-switcher,
+.pagination ul>li>a:hover, .pagination ul>.active>a, .pagination ul>.active>span, {
+	background-color: #333;
+	border-color: #666;
+}
+legend {
+	color: #666;
+	border-bottom-color: #333;
+}
+.quickview-box .page-header,
+.quickview-box .product-info .cart {
+	border-color: #ddd;
+}
+.pagination ul>li>a, .pagination ul>li>span {
+	background: #111;
+	border-color: #333;
+}
+.subcat a {
+	text-shadow: none;
+	color: #fff;
+}
+
+#cart-info td,
+.product-info .image-additional:hover a {
+	background: transparent !important;
+	border-color: #111;
+}
+
+@media only screen and (max-width: 979px) {
+
+	.responsive .nav-collapse.in { background: #111; border-color: #333; }
+	.responsive .nav-collapse li { border-top: 1px solid #222;	}
+	.responsive .nav-collapse li:first-child { border: 0;}
+	.responsive #homelink { display: none; }
+
+	.responsive .button-navbar span, 
+	.responsive #footer h3.header {
+		color: #fff; 
+		text-shadow: none;
+	}
+
+	.responsive .navbar .button-navbar {
+		background: #222;
+		border: 1px solid #333;
+		color: #ddd;
+		box-shadow: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		-o-box-shadow: none;
+	}
+
+	.responsive .navbar .button-navbar span {
+		border-right-color: #222;
+		color: #fff;
+		text-shadow: none;
+	}
+
+	.responsive .navbar .button-navbar:hover {
+		background-color: #111;
+		color: #fff !important;
+	}
+
+	.responsive .navbar .nav > li > a {
+		color: #fff;
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+
+	#mobileMenuWrap {
+		border: 1px solid #333;
+		background: #111;
+	}
+	.responsive #footer h3.header {
+		border-color: #333;
+		font-weight: normal;
+	}
+	.responsive #footer h3.header:hover,
+	.responsive #footer h3.header.active {
+		background-color: #111;
+		color: #fff !important;
+	}
+	.responsive #footer ul.content {
+		background: #000;
+		border-color: #111;
+	}
+	.responsive #footer ul li a {
+		border-bottom: 1px solid #333;
+		color: #fff;
+	}
+	.responsive #footer ul li a:hover, 
+	.responsive #footer ul li a:active {
+		background-color: #202020;
+		color: #fff;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.htabs a, .htabs a.selected {
+		border-color: #333;
+	}
+}
+

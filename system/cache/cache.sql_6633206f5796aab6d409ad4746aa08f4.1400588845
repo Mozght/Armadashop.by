@@ -1,0 +1,6 @@
+O:8:"stdClass":5:{s:3:"row";a:0:{}s:4:"rows";a:0:{}s:8:"num_rows";i:0;s:3:"sql";s:356:"SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 76 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)";s:4:"time";i:1400588725;}

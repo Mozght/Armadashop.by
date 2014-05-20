@@ -1,0 +1,21 @@
+<modification>
+	<id><![CDATA[@tik ADD PHONE IN HEADER]]></id>
+	<version><![CDATA[1.9.6]]></version>
+	<vqmver><![CDATA[2.3.2]]></vqmver>
+	<author><![CDATA[OC2PS]]></author>
+
+	<file name="catalog/view/theme/clearshop/template/common/header.tpl">
+		<operation>
+			<search position="before" error="log"><![CDATA[<div class="infomenu">]]></search>
+			<add><![CDATA[
+			<div class="phone">
+				<ul>
+					<li>+375 (29)</li>
+					<li>+375 (33)</li>
+				</ul>
+				<div class="phone_number">6911156</div>
+			</div>
+			]]></add>
+		</operation>
+	</file>
+</modification>

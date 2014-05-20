@@ -1,0 +1,3182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2014-03-03 10:12">
+<shop>
+<name>Armada</name>
+<company>ИП Растворцев А.А.</company>
+<url>http://armadashop.by/</url>
+<phone>+375 29 69 111 56</phone>
+<platform>ocStore</platform>
+<version>1.5.5.1</version>
+<currencies>
+<currency id="BYR" rate="1" />
+<currency id="USD" rate="9783" />
+</currencies>
+<categories>
+<category id="59" parentId="60" >
+Толстовки и свитера</category>
+<category id="60" >
+Мужское</category>
+<category id="61" >
+Женское</category>
+<category id="62" >
+Детское</category>
+<category id="64" parentId="61" >
+Толстовки</category>
+<category id="65" parentId="60" >
+Футболки/Майки</category>
+<category id="66" parentId="61" >
+Футболки/Туники</category>
+<category id="67" parentId="60" >
+Рубашки</category>
+<category id="68" parentId="60" >
+Шорты/Бордшорты</category>
+<category id="69" parentId="61" >
+Шорты/Юбки</category>
+<category id="70" parentId="60" >
+Ремни и кошельки</category>
+<category id="71" parentId="61" >
+Ремни и кошельки</category>
+<category id="73" >
+Аксессуары</category>
+<category id="74" parentId="73" >
+Шлепанцы</category>
+<category id="75" parentId="73" >
+Полотенца</category>
+<category id="76" parentId="73" >
+Брелоки, значки</category>
+<category id="77" >
+Скимборды</category>
+<category id="78" parentId="62" >
+Футболки</category>
+<category id="79" parentId="62" >
+Шорты/Бордшорты</category>
+<category id="80" parentId="60" >
+Кепки</category>
+<category id="81" parentId="62" >
+Кепки</category>
+<category id="82" parentId="72" >
+Рюкзаки</category>
+<category id="83" parentId="72" >
+Дорожные и спортивные сумки</category>
+<category id="84" parentId="60" >
+Куртки с мембраной</category>
+<category id="85" parentId="60" >
+Штаны с мембраной</category>
+<category id="86" parentId="60" >
+Термобелье</category>
+<category id="87" parentId="60" >
+Шапки, повязки/ Воротники</category>
+<category id="88" parentId="61" >
+Куртки с мембраной</category>
+<category id="89" parentId="61" >
+Штаны с мембраной</category>
+<category id="90" parentId="61" >
+Термобелье</category>
+<category id="91" parentId="61" >
+Шапки, повязки/ Воротники</category>
+<category id="92" parentId="60" >
+Куртки/Ветровки</category>
+<category id="93" parentId="62" >
+Куртки с мембраной</category>
+<category id="94" parentId="62" >
+Штаны с мембраной</category>
+<category id="95" parentId="62" >
+Зимние шапки</category>
+<category id="96" parentId="62" >
+Толстовки</category>
+<category id="97" >
+С подогревом</category>
+<category id="98" parentId="97" >
+Жилетки с подогревом</category>
+<category id="99" parentId="97" >
+Стельки с подогревом</category>
+<category id="100" parentId="97" >
+Сушилки для обуви/ экипа</category>
+<category id="101" parentId="97" >
+Шипы для обуви</category>
+<category id="102" parentId="97" >
+Аксессуары с подогревом</category>
+<category id="103" parentId="97" >
+Для животных</category>
+<category id="104" parentId="60" >
+Перчатки и варежки</category>
+</categories>
+<offers>
+<offer id="50" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/sweatshirt/scale</url>
+<price>1147500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>59</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/sweatshirts_-_OK/scale_red.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Толстовка худи Horsefeathers Scale zip</model>
+<description>тёплая и очень комфортная толстовка-худи
+classic fit
+
+65% хлопок, 35% полиэстер
+сделано в евросоюзе
+принт на груди,спине и рукаве
+застёгивается на замок по всей длине</description>
+</offer>
+<offer id="51" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/sweatshirt/chroma</url>
+<price>1147500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>59</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/sweatshirts_-_OK/chroma_heather_anhracite.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Кардиган на пуговицах Horsefeathers Сhroma</model>
+<description>модная и удобная толстовка на пуговицах
+classic fit
+
+100% хлопок
+вышитый логотип на груди
+пуговицы с логотипом</description>
+</offer>
+<offer id="52" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/sweatshirt/leader</url>
+<price>1080000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>59</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/sweatshirts_-_OK/leader_heather_gray.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Толстовка Horsefeathers Leader</model>
+<description>тёплая и очень комфортная толстовка-худи
+classic fit
+
+65% хлопок, 35% полиэстер
+принт на груди
+удобный карман-кенгуру</description>
+</offer>
+<offer id="53" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/sweatshirts/goodbye</url>
+<price>1080000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/sweatshirts_-_OK/goodbye_blue.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Толстовка Horsefeathers Goodbye</model>
+<description>стильная и теплая толстовка, очень нежная на ощупь
+отлично сидит по фигуре, не вытягивается
+classic fit
+
+95% хлопок, 5% эластан
+принт на груди и спине
+контрастные пуговицы м логотипом</description>
+</offer>
+<offer id="54" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/absolute</url>
+<price>351000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/t-shirts_-_OK/absolute_white.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Absolute</model>
+<description>slim fit
+core series
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="55" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/fair</url>
+<price>283500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/t-shirts_-_OK/fair_lime.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Fair</model>
+<description>slim fit
+iconic series
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="56" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/xray</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/t-shirts_-_OK/xray_black.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Xray</model>
+<description>classic fit
+art series
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="57" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/daytona</url>
+<price>283500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/t-shirts_-_OK/daytona_brown.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Daytona</model>
+<description>slim fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="58" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/my-god-rides-a-snowboard</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/t-shirts_-_OK/my_god_rides_a_snowboard.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers My god rides a snowboard</model>
+<description>classic fit
+core series
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="59" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/my-god-rides-a-skateboard</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/t-shirts_-_OK/my_god_rides_a_skateboard.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers My god rides a skateboard</model>
+<description>classic fit
+core series
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="60" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/levels</url>
+<price>283500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/t-shirts_-_OK/levels_brown.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Levels</model>
+<description>slim fit
+iconic series
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="61" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/out-of-sight</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/t-shirts_-_OK/out_of_sight_black.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Out of sight</model>
+<description>slim fit
+art series
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="62" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/form</url>
+<price>324000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/t-shirts_-_OK/form_brown.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Form</model>
+<description>classic fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="63" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/perfect-storm</url>
+<price>342900.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/t-shirts_-_OK/perfect_storm_white.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Perfect storm</model>
+<description>slim fit
+art series
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="64" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/t-shirts/satellite</url>
+<price>344250.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>66</categoryId>
+<picture>http://armadashop.by/image/data/lifestyle/DSC_8733.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Satellite</model>
+<description>regular fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="65" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/t-shirts/simple</url>
+<price>319950.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>66</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/t-shirts_-_OK/simple_navy.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Топ Horsefeathers Simple</model>
+<description>топ с бретельками
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="66" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/t-shirts/pearl-halter</url>
+<price>342900.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>66</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/t-shirts_-_OK/pearl_purpl_back.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Pearl halter</model>
+<description>топ с бретелькой через шею
+очень легкий и приятный к телу
+
+100% вискоза
+регулируемая бретелька через шею
+принт внизу</description>
+</offer>
+<offer id="67" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/t-shirts/better-brunettes</url>
+<price>472500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>66</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/t-shirts_-_OK/better_brunettes.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Better Brunettes</model>
+<description>regular fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="68" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/t-shirt-/planet</url>
+<price>229500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>78</categoryId>
+<picture>http://armadashop.by/image/data/kids_-_OK/t-shirts_-_OK/planet_orange.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Planet</model>
+<description>100% хлопок
+принт на груди</description>
+</offer>
+<offer id="69" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/shirt/quake</url>
+<price>513000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>67</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/shirts_-_OK/quake_red.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Рубашка Horsefeathers Quake</model>
+<description>regular fit
+стильная рубашка с коротким рукавом
+
+100% хлопок
+меланжевая пряжа придает рубашке очень интересный цветовой оттенок
+на груди 1 карман с логотипом</description>
+</offer>
+<offer id="70" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/shirt/zenith</url>
+<price>742500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>67</categoryId>
+<picture>http://armadashop.by/image/data/SM388B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Рубашка с длинным рукавом Horsefeathers Zenith</model>
+<description>regular fit
+стильная рубашка с длинным рукавом
+
+100% хлопок
+меланжевая пряжа придает рубашке очень интересный цветовой оттенок
+на груди 1 карман с логотипом</description>
+</offer>
+<offer id="71" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/shirt/nome</url>
+<price>810000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>67</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/shirts_-_OK/nome_lime.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Рубашка Horsefeathers Nome</model>
+<description>regular fit
+очень приятная на ощупь и удобная при носке
+
+100% фланель хлопок
+меланжевая пряжа придает рубашке очень интересный цветовой оттенок
+2 кармана на груди
+принт на грудном кармане</description>
+</offer>
+<offer id="72" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/short/jive</url>
+<price>607500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>68</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/boardshorts_-_OK/jive_black.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шорты Horsefeathers Jive</model>
+<description>пляжные бордшорты
+очень удобные для любого водного или пляжного спорта
+
+100% полиэстер
+логотип по всей поверхности
+боковой карман</description>
+</offer>
+<offer id="73" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/short/pearl</url>
+<price>425250.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>68</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/boardshorts_-_OK/pearl_black.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шорты Horsefeathers Pearl</model>
+<description>пляжные бордшорты
+очень удобные для любого водного или пляжного спорта
+
+100% полиэстер
+застёжка на липучке
+логотип сбоку
+боковой карман</description>
+</offer>
+<offer id="74" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/short/helio</url>
+<price>472500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>68</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/boardshorts_-_OK/helio_white.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шорты Horsefeathers Helio</model>
+<description>пляжные бордшорты
+очень удобные для любого водного или пляжного спорта
+
+100% полиэстер
+боковой карман</description>
+</offer>
+<offer id="75" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/shorts/destination</url>
+<price>418500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>69</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/boardshorts_-_OK/destination_coral.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шорты Horsefeathers Destination</model>
+<description>пляжные бордшорты
+купайся, расслабляйся и будь заметной
+
+100% полиэстер
+логотип спереди и сбоку
+карман сзади</description>
+</offer>
+<offer id="76" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/shorts/dangerous</url>
+<price>378000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>69</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/boardshorts_-_OK/dangerous_blue_2.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шорты Horsefeathers Dangerous</model>
+<description>пляжные бордшорты
+купайся, расслабляйся и будь заметной
+
+100% полиэстер
+логотип спереди и сбоку
+карман сзади</description>
+</offer>
+<offer id="77" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/short-/pearl-</url>
+<price>324000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>79</categoryId>
+<picture>http://armadashop.by/image/data/kids_-_OK/boardshorts_-_OK/pearl_kids_green.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шорты Horsefeathers Pearl</model>
+<description>детские пляжные шорты
+удобные в носке и стойкие к любым детским игграм на пляже и в воде
+
+100% полиэстер
+логотип сбоку
+боковой карман</description>
+</offer>
+<offer id="78" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/belt-wallets/lara</url>
+<price>270000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/belts_-_OK/lara_cyan.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Ремень Horsefeathers Lara</model>
+<description>отличный акессуар под джинсы, шорты, юбки и сноубордические штаны!
+
+универсальный размер (one size)
+100% хлопок
+пряжка с логотипом
+логотипом на ремешке</description>
+</offer>
+<offer id="79" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/belt-wallets/stream</url>
+<price>270000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/belts_-_OK/stream_blue.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Ремень Horsefeathers Stream</model>
+<description>отличный акессуар под джинсы, шорты, юбки и сноубордические штаны!
+
+универсальный размер (one size)
+100% acrylic
+пряжка с логотипом
+логотипом на ремешке</description>
+</offer>
+<offer id="80" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/belt-wallets/platoon</url>
+<price>270000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/belts_-_OK/platoon_green.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Ремень Horsefeathers Platoon</model>
+<description>двусторонний ремень
+отличный акессуар под джинсы, шорты и сноубордические штаны!
+
+универсальный размер (one size)
+ремень unisex
+100% хлопок
+пряжка с логотипом
+логотипом на ремешке</description>
+</offer>
+<offer id="81" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/belts-wallets/bass</url>
+<price>270000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/belts_-_OK/bass_blue.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Ремень Horsefeathers Bass</model>
+<description>отличный акессуар под джинсы, шорты и сноубордические штаны!
+
+универсальный размер (one size)
+ремень unisex
+100% хлопок
+пряжка с логотипом
+логтипом на ремешке</description>
+</offer>
+<offer id="82" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/belt-wallets/boogie</url>
+<price>540000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/belts_-_OK/boogie_black.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Ремень кожаный Horsefeathers Boogie</model>
+<description>100% натуральная кожа, ручная работа
+
+универсальный размер (one size)
+металлическая застёжка
+пряжка с логотипом
+тиснённый логотипом на ремешке</description>
+</offer>
+<offer id="83" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/belts-wallets/woogie</url>
+<price>540000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>71</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/belts_-_OK/woogie_magental.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Ремень кожаный Horsefeathers Woogie</model>
+<description>100% натуральная кожа, ручная работа
+ремень unisex
+
+универсальный размер (one size)
+металлическая застёжка
+пряжка с логотипом
+тиснённый логотипом на ремешке</description>
+</offer>
+<offer id="84" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/belts-wallets/neddy</url>
+<price>607500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>71</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/belts_-_OK/neddy_purple.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Ремень кожаный Horsefeathers Neddy</model>
+<description>100% натуральная кожа
+ручная работа
+
+универсальный размер (one size)
+металлическая пряжка с логотипом
+тиснённый логотипом на ремешке</description>
+</offer>
+<offer id="85" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/belt-wallets/lassard</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/wallets_-_OK/lassard_brown.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Кошелек Horsefeathers Lassard</model>
+<description>функциональный кошелёк из искусственной кожи
+
+12см х 10см
+2 основных отделения
+9 отделений для кредитных карточек
+отделение на молнии для монет
+прозрачное отделение для водительского удостоверения или id
+тиснённый логотипом на ремешке</description>
+</offer>
+<offer id="86" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/belts-wallets/jones</url>
+<price>297000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/wallets_-_OK/jones_white.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Кошелек Horsefeathers Jones</model>
+<description>функциональный кошелёк
+
+100% полиэстер
+13см х 10см
+2 основных отделения
+9 отделений для кредитных карточек
+отделение на молнии для монет
+прозрачное отделение для водительского удостоверения или id
+тиснённый логотипом на ремешке</description>
+</offer>
+<offer id="87" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/belts-wallets/gadget</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>71</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/wallets_-_OK/gadget_denim.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Кошелек Horsefeathers Gadget</model>
+<description>стильный кошелёк-клатч
+
+100% перфорированная кожа или деним
+20см х 11см
+1 основное отделение
+12 отделений для кредитных карточек
+отделение для монет
+молния по периметру кошелька
+ремешок на запястье</description>
+</offer>
+<offer id="88" type="vendor.model" available="true" >
+<url>http://armadashop.by/accessories/sandal/skydiver</url>
+<price>229500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>74</categoryId>
+<picture>http://armadashop.by/image/data/womens_-_OK/sandals_-_OK/skydiver.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шлепанцы Horsefeathers Skydiver</model>
+<description>мягкая подошва и комфортная стелька
+очень удобные шлёпанцы для пляжа и города</description>
+</offer>
+<offer id="89" type="vendor.model" available="true" >
+<url>http://armadashop.by/accessories/sandal/mile</url>
+<price>229500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>74</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/sandals_-_OK/mile.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шлепанцы Horsefeathers Mile</model>
+<description>мягкая подошва и комфортная стелька
+очень удобные шлёпанцы для пляжа и города</description>
+</offer>
+<offer id="90" type="vendor.model" available="true" >
+<url>http://armadashop.by/accessories/mitch</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>73</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/accessories_-_OK/mitch.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Полотенце Horsefeathers Mitch</model>
+<description>мягкое полотенце на пляж, в баню, после душа - любые цели
+
+100% хлопок
+80см х 140см</description>
+</offer>
+<offer id="91" type="vendor.model" available="true" >
+<url>http://armadashop.by/accessories/keyring-button/buttons</url>
+<price>20250.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>76</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/accessories_-_OK/buttons.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Значки Horsefeathers Buttons</model>
+<description>значки с логотипами</description>
+</offer>
+<offer id="92" type="vendor.model" available="true" >
+<url>http://armadashop.by/accessories/keyring-button/first-aid</url>
+<price>67500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>76</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/accessories_-_OK/first_aid.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Брелок Horsefeathers First aid</model>
+<description>стильный брелок с открывашкой для бутылок
+
+матовое покрытие</description>
+</offer>
+<offer id="93" type="vendor.model" available="true" >
+<url>http://armadashop.by/accessories/keyring-button/flat</url>
+<price>54000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>76</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/accessories_-_OK/flat.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Брелок Horsefeathers Flat</model>
+<description>стильный брелок
+
+матовое покрытие</description>
+</offer>
+<offer id="94" type="vendor.model" available="true" >
+<url>http://armadashop.by/accessories/keyring-button/bottle</url>
+<price>67500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>76</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/accessories_-_OK/bottle.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Брелок Horsefeathers Bottle</model>
+<description>стильный брелок с открывашкой для бутылок
+
+никелевое покрытие</description>
+</offer>
+<offer id="95" type="vendor.model" available="true" >
+<url>http://armadashop.by/accessories/keyring-button/nero</url>
+<price>67500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>76</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/accessories_-_OK/nero.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Брелок Horsefeathers Nero</model>
+<description>стильный брелок
+
+искусственная кожа
+металлический логотип</description>
+</offer>
+<offer id="96" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/cap-/slot</url>
+<price>283500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>81</categoryId>
+<picture>http://armadashop.by/image/data/kids_-_OK/caps_-_OK/slot_kids.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Кепка Horsefeathers Slot</model>
+<description>модная детская кепка с контрастной 3d вышивкой логотипа
+
+обхват головы 52-55 см
+эластичная задняя часть кепки не позволяет передавливать голову
+логотим спереди и сзади</description>
+</offer>
+<offer id="97" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/cap/march</url>
+<price>283500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://armadashop.by/image/data/kids_-_OK/caps_-_OK/march_kids_green.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Кепка Horsefeathers March</model>
+<description>модная детская кепка с контрастной 3d вышивкой логотипа
+
+обхват головы 52-55 см
+регулируемая застежка
+небольшой логотип сзади</description>
+</offer>
+<offer id="98" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/cap/chevy</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/caps_-_OK/CHEVY_red.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Кепка Horsefeathers Сhevy</model>
+<description>крутая кепка с контрастной 3d вышивкой логотипа
+
+обхват головы 56-65 см
+регулируемая застежка
+небольшой логотип сзади</description>
+</offer>
+<offer id="99" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/cap/petrel</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>80</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/caps_-_OK/PETREL_gray.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Кепка Horsefeathers Petrel</model>
+<description>одноцветная кепка с вышитым логотипом
+
+универсальный размер
+эластичная задняя часть кепки не позволяет передавливать голову</description>
+</offer>
+<offer id="100" type="vendor.model" available="true" >
+<url>http://armadashop.by/accessories/cover</url>
+<price>776250.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>73</categoryId>
+<picture>http://armadashop.by/image/data/mens_-_OK/backpacks_-_OK/cover_black.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Рюкзак Horsefeathers Cover</model>
+<description>вместительный рюкзак с отделением для ноутбука 15&amp;quot;
+
+размеры: 52х32х20 см
+материал полиэстер
+2 основных отделения
+1 внешнее отделение на молнии
+органайзер внутри рюкзака
+отделение для ноутбука (диагональ 15&amp;quot;) отделанное мягкой тканью
+2 боковых кармана из сетки</description>
+</offer>
+<offer id="101" type="vendor.model" available="true" >
+<url>http://armadashop.by/skim/puerto-escondido</url>
+<price>675000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>77</categoryId>
+<picture>http://armadashop.by/image/data/SKM1/PUERTO_ESCONDIDO_-_41_-_wood-_50EURO.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>SKM1</vendor>
+<model>Скимборд SKM1 Puerto escondido</model>
+<description>скимборд puerto escondido 41&amp;quot;
+
+104см х 52см
+сделан из древесины
+широкая поверхность делает его устойчивее при скольжении, не позволяя быстро разгоняться, что подойдёт начинающим райдерам</description>
+</offer>
+<offer id="102" type="vendor.model" available="true" >
+<url>http://armadashop.by/skim/ribbon</url>
+<price>742500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>77</categoryId>
+<picture>http://armadashop.by/image/data/SKM1/red-41-wood-55EURO.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>SKM1</vendor>
+<model>Скимборд SKM1 Ribbon</model>
+<description>скимборд ribbon 41&amp;quot;
+
+104см х 52см
+сделан из древесины
+широкая поверхность делает его устойчивее при скольжении, не позволяя быстро разгоняться, что подойдёт начинающим райдерам</description>
+</offer>
+<offer id="103" type="vendor.model" available="true" >
+<url>http://armadashop.by/skim/avatar</url>
+<price>1080000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>77</categoryId>
+<picture>http://armadashop.by/image/data/SKM1/avatar.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>SKM1</vendor>
+<model>Скимборд SKM1 Avatar</model>
+<description>скимборд avatar 39&amp;quot;
+
+100см х 50см
+twin tip
+покрыт fiberglass, сделан из древесины
+конструкция twin tip отлично подходит для выполнения разлючных трюков, таких как вращения, рэйлы, боксы и проч.</description>
+</offer>
+<offer id="104" type="vendor.model" available="true" >
+<url>http://armadashop.by/skim/metric</url>
+<price>1485000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>77</categoryId>
+<picture>http://armadashop.by/image/data/SKM1/blue-44-fiberglass&amp;wood-sandwich-110EURO.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>SKM1</vendor>
+<model>Скимборд SKM1 Metric</model>
+<description>скимборд metric 44&amp;quot;
+
+112см х 56см
+покрыт fiberglass, сделан из древесины
+стекловолоконное покрытие снизу делает его более прочным и долговечным по сравнению с натуральным деревом
+также покрытие fiberglass делает его более быстрым, стремительным и манёвренным
+самый большой в коллекции, позволяет сохранять устойчивость и не терять скорость при скольжении людям любого роста и веса</description>
+</offer>
+<offer id="105" type="vendor.model" available="true" >
+<url>http://armadashop.by/skim/halfline</url>
+<price>1147500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>77</categoryId>
+<picture>http://armadashop.by/image/data/SKM1/HALFLINE-41_-_Fibegglass&amp;wood-sandwich_-_85EURO.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>SKM1</vendor>
+<model>Скимборд SKM1 Halfline</model>
+<description>скимборд half line 41&amp;quot;
+
+104,5см х 54,6см
+покрыт fiberglass, сделан из древесины
+популярен среди райдеров любого уровня катания
+подходит для выполнения трюков
+стекловолоконное покрытие снизу делает его более прочным и долговечным по сравнению с натуральным деревом
+также покрытие fiberglass делает его более быстрым, стремительным и манёвренным</description>
+</offer>
+<offer id="106" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/beanies-/generator2</url>
+<price>270000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>95</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA602A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Generator ii kids</model>
+<description>двусторонняя зимняя шапка
+100% acrylic
+логотип на одной стороне и название бренда с другой стороны
+меланжевая пряжа
+универсальный размер</description>
+</offer>
+<offer id="107" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/beanies-/kirk</url>
+<price>202500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>95</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/AA317N.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Kirk kids</model>
+<description>зимняя шапка в полоску
+
+100% acrylic
+универсальный размер</description>
+</offer>
+<offer id="108" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/beanies-/coma</url>
+<price>229500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>95</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA406Q.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Coma kids</model>
+<description>зимняя шапка в полоску
+
+100% acrylic
+меланжевая пряжа
+универсальный размер</description>
+</offer>
+<offer id="109" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/snowjacket-/harisy</url>
+<price>2025000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>93</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OK023C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Haris kids</model>
+<description>куртка для юных райдеров
+
+100% polyester ottoman
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+система вентиляции
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для маски, аудио
+карман для скипасса
+манжет с прорезью для большого пальца для защиты от попадания снега в рукав
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="110" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/snowjacket-/orbity</url>
+<price>1485000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>93</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OK020D.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Orbit kids</model>
+<description>куртка для юных райдеров
+
+100% polyester ottoman
+мембрана 5,000/5,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для маски, аудио
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="111" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/snowjacket-/pyxis2</url>
+<price>1620000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>93</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OK024A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Pyxis ii kids</model>
+<description>куртка для юных райдеров
+
+100% polyester ottoman
+мембрана 5,000/5,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для маски, аудио
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="112" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/snowpants-/octansy</url>
+<price>1350000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>94</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OK021A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Octans kids</model>
+<description>брюки для юных райдеров
+
+100% polyester twill
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+система вентиляции
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+крючки на манжетах брюк для крепления к ботинку
+регулируемая длина талии
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="113" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/snowpants-/gruisy</url>
+<price>1485000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>94</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OK027B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Gruis kids</model>
+<description>брюки для юных райдеров
+
+100% polyester ottoman
+мембрана 5,000/ 5,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 40 г/м2
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+крючки на манжетах брюк для крепления к ботинку
+регулируемая длина талии
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="114" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/sweatshirts-/solary</url>
+<price>607500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>96</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SK070A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Толстовка детская Horsefeathers Solar kids</model>
+<description>тёплая и очень комфортная толстовка худи
+
+65% хлопок, 35% полиэстер
+принт на груди</description>
+</offer>
+<offer id="115" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/sweatshirts-/stratosy</url>
+<price>607500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>96</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/SK053D.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Толстовка Horsefeathers Stratos kids</model>
+<description>тёплая и очень комфортная толстовка худи
+
+65% хлопок, 35% полиэстер
+принт на груди</description>
+</offer>
+<offer id="116" type="vendor.model" available="true" >
+<url>http://armadashop.by/kids/t-shirt-/wally</url>
+<price>229500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>78</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/SK058A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Майка детская Horsefeathers Wall kids</model>
+<description>100% хлопок
+принт на груди</description>
+</offer>
+<offer id="117" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/beanie/trig</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA579B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Trig</model>
+<description>зимняя шапка коллекция &amp;quot;раста&amp;quot;
+
+100% acrylic
+универсальный размер</description>
+</offer>
+<offer id="118" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/dali</url>
+<price>283500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA580C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Dali</model>
+<description>зимняя шапка
+
+100% acrylic
+меланжевая пряжа
+универсальный размер</description>
+</offer>
+<offer id="119" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/generator-ii</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA602A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Generator ii</model>
+<description>двусторонняя зимняя шапка
+
+100% acrylic
+логотип на одной стороне и название бренда с другой стороны
+универсальный размер</description>
+</offer>
+<offer id="120" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/beanie/analyse-ii</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA528J.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Analyse II</model>
+<description>Зимняя шапка Horsedeathers.
+
+Одновременно &amp;nbsp;и тепло и выводит влагу.
+
+100% acrylic
+универсальный размер</description>
+</offer>
+<offer id="121" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/beanie/summit</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA583C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Summit</model>
+<description>зимняя шапка
+
+100% acrylic
+универсальный размер</description>
+</offer>
+<offer id="122" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/beanie/rhapsody-ii</url>
+<price>283500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA584C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Rhapsody ii</model>
+<description>зимняя шапка с козырьком
+
+100% acrylic
+универсальный размер
+двусторонняя в красном цвете</description>
+</offer>
+<offer id="124" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/zone</url>
+<price>283500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA582A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Zone</model>
+<description>зимняя шапка
+
+100% acrylic
+универсальный размер</description>
+</offer>
+<offer id="125" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/beanie/sign</url>
+<price>202500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/AA530D.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Sign</model>
+<description>зимняя шапка
+
+100% acrylic
+универсальный размер</description>
+</offer>
+<offer id="126" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/beanie/trace</url>
+<price>202500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/AA529E.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Trace</model>
+<description>зимняя шапка
+
+100% acrylic
+универсальный размер</description>
+</offer>
+<offer id="127" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/viper</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/AA504A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Viper</model>
+<description>Зимняя шапка
+
+100% acrylic
+универсальный размер</description>
+</offer>
+<offer id="128" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/polar</url>
+<price>283500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/AA507A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Polar</model>
+<description>зимняя шапка
+
+100% acrylic
+внутри флисовая подкладка
+универсальный размер</description>
+</offer>
+<offer id="129" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/neck-warmer</url>
+<price>202500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/neck_warmer.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Нашейная повязка/ шарф Horsefeathers Neck warmer</model>
+<description>повязка-шарф
+
+100% polyester microfleece
+флисовая подкладка
+универсальный размер</description>
+</offer>
+<offer id="130" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/first-layer/loby-snow</url>
+<price>270000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>86</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA510E.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Термоноски Horsefeathers Loby snow</model>
+<description>Сноубордические носки
+
+70% cotton, 25% polypropylene, 5% elastane
+
+Обратите внимание на ограниченную коллекцию&amp;nbsp;сезона 2013/2014&amp;nbsp;- RASTA</description>
+</offer>
+<offer id="131" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/first-layer/spirit-thermolite</url>
+<price>324000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>86</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA418E.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Носки Horsefeathers Spirit thermolite</model>
+<description>сноубордические носки thermolite
+
+35% polyacrylic, 30% thermolite, 20% polypropylene, 10% wool 5% elastane
+синтетическое волокно thermolite сохраняет тепло, отводит влагу с поверхности ног при активных физических нагрузках, быстро сохнет</description>
+</offer>
+<offer id="132" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/belt-wallets/fred</url>
+<price>607500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>70</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA594B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Ремень кожаный Horsefeathers Fred</model>
+<description>100% натуральная кожа, ручная работа
+
+универсальный размер (one size)
+пряжка с логотипом
+тиснённый логотипом на ремешке</description>
+</offer>
+<offer id="133" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/jupiter</url>
+<price>2457000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OM142C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Jupiter</model>
+<description>сноубордическая куртка
+
+100% recycled nylon
+мембрана 15,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель primaloft eco® сохраняет тепло, отводит испарение от тела, не пропукает влагу снаружи и ветер
+система вентиляции
+швы полностью проклеены
+водонепроницаемые молнии ykk
+внутренний карман для маски, перчаток и аудио
+карман для скипасса
+отсоединяемая эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="134" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/prime</url>
+<price>2362500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_ADDITIONAL/OM144B_2.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Prime</model>
+<description>сноубордическая куртка-трансформер
+прокачай свою куртку!
+
+100% nylon
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+дополнительные контрастные карманы и прочая мелочь для &amp;quot;прокачки&amp;quot; твоей куртки
+утеплитель 80 г/м2
+система вентиляции
+швы полностью проклеены
+водонепроницаемые молнии ykk
+внутренний карман для маски, аудио
+карман для скипасса
+манжет с прорезью на большой палец для защиты от попадания снега в рукав
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="135" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/taonas-shell</url>
+<price>2565000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OM145C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Taonas shell</model>
+<description>сноубордическая куртка (shell version)
+
+100% nylon
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+система вентиляции
+швы полностью проклеены
+водонепроницаемые молнии ykk
+внутренний карман для маски, аудио
+карман для скипасса
+карман-наполеон на груди
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="136" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/taonas-insulated</url>
+<price>2835000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OM145D.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Taonas insulated</model>
+<description>сноубордическая куртка (insulated version)
+
+100% nylon
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+система вентиляции
+швы полностью проклеены
+водонепроницаемые молнии ykk
+внутренний карман для маски, аудио
+карман для скипасса
+карман-наполеон на груди
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="138" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/athos</url>
+<price>2160000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OM149A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Athos</model>
+<description>сноубордическая куртка
+
+100% polyester ottoman
+мембрана 5,000/5,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+система вентиляции
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для аудио
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="139" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/selenis</url>
+<price>1890000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OM151C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Selenis</model>
+<description>сноубордическая куртка
+
+100% polyester ottoman
+мембрана 5,000/5,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+система вентиляции
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для аудио
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="140" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/taranis</url>
+<price>2025000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OM152A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Taranis</model>
+<description>сноубордическая куртка
+
+100% polyester
+мембрана 5,000/5,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для аудио</description>
+</offer>
+<offer id="141" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/leonis</url>
+<price>3105000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OM123A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Leonis</model>
+<description>сноубордическая куртка
+
+100% recycled nylon
+мембрана 15,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель primaloft eco® сохраняет тепло, отводит испарение от тела, не пропукает влагу снаружи и ветер
+система вентиляции
+швы полностью проклеены
+водонепроницаемые молнии ykk
+внутренний карман для маски, перчаток и аудио
+отсоединяемая эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="142" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/mars</url>
+<price>2430000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OM124C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Mars</model>
+<description>сноубордическая куртка
+
+100% polyester
+мембрана 15,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+система вентиляции
+швы полностью проклеены
+водонепроницаемые молнии ykk
+внутренний карман для маски, перчаток и аудио
+карман-наполеон на груди
+манжет с прорезью на большой палец для защиты от попадания снега в рукав
+отсоединяемая эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="143" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/taurus</url>
+<price>2700000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OM125C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Taurus</model>
+<description>сноубордическая куртка
+
+100% recycled nylon
+мембрана 15,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель primaloft eco® сохраняет тепло, отводит испарение от тела, не пропукает влагу снаружи и ветер
+система вентиляции
+швы полностью проклеены
+водонепроницаемые молнии ykk
+внутренний карман для маски, перчаток и аудио
+карман-наполеон на груди
+манжет с прорезью на большой палец для защиты от попадания снега в рукав
+отсоединяемая эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="144" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/saturn</url>
+<price>2430000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OM128A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Saturn</model>
+<description>сноубордическая куртка
+
+100% polyester herringbone
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+long cut
+
+утеплитель 80 г/м2
+система вентиляции
+швы полностью проклеены
+водонепроницаемые молнии ykk
+внутренний карман для маски, аудио
+карман-наполеон на груди
+манжет с прорезью на большой палец для защиты от попадания снега в рукав
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="145" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowjacket/becrux</url>
+<price>2497500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>84</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OM130A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Becrux</model>
+<description>сноубордическая куртка
+
+100% polyester herringbone
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+long cut
+
+утеплитель 80 г/м2
+система вентиляции
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для маски, аудио
+манжет с прорезью на большой палец для защиты от попадания снега в рукав
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="146" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowpant/lynx</url>
+<price>2700000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>85</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OM137C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Lynx</model>
+<description>сноубордические штаны
+
+100% recycled nylon twill
+мембрана 15,000/10,000 (waterproofness/breathability) водоотталкивающая
+slim fit
+
+швы полностью проклеены
+водонепроницаемые молнии ykk
+система вентиляции
+регулируемая длина пояса
+отсоединяемый пояс-юбка, не позволяющий снегу попадать под одежду при агрессивном катании
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="147" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowpant/serpens-shell</url>
+<price>1620000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>85</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OM138B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Serpens shell</model>
+<description>сноубордические штаны
+
+100% polyester twill
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+боковые карманы
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+система вентиляции
+регулируемая длина пояса
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="148" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowpant/serpens-insulated</url>
+<price>2025000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>85</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OM138A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Serpens insulated</model>
+<description>сноубордические штаны
+
+100% polyester twill
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 40 г/м2
+боковые карманы
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+система вентиляции
+регулируемая длина пояса
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="149" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowpant/octans</url>
+<price>1890000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>85</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OM140A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Octans</model>
+<description>сноубордические штаны
+
+100% polyester twill
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+slim fit
+
+утеплитель 40 г/м2
+боковые карманы
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+система вентиляции
+регулируемая длина пояса
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="150" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowpant/gruis</url>
+<price>1890000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>85</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OM141B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Gruis</model>
+<description>сноубордические штаны
+
+100% ottoman
+мембрана 5,000/5,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+боковые карманы
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+регулируемая длина пояса
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="151" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowpant/rigel</url>
+<price>2700000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>85</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OM154A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Rigel</model>
+<description>сноубордические штаны
+
+100% recycled nylon twill
+мембрана 15,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+боковые карманы
+швы полностью проклеены
+водонепроницаемые молнии ykk
+система вентиляции
+регулируемая длина пояса
+отсоединяемый пояс-юбка, не позволяющий снегу попадать под одежду при агрессивном катании
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="152" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/snowpant/sarif</url>
+<price>2565000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>85</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OM156F.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Sarif</model>
+<description>сноубордические штаны
+
+! низ штанов усилен тканью cordura от порезов кантом. супер актуально при джибинге.
+
+100% nylon (red, blue, green), 100% polyester herringbone (sand, dark navy)
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+боковые карманы
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+система вентиляции
+регулируемая длина пояса
+отсоединяемый пояс-юбка, не позволяющий снегу попадать под одежду при агрессивном катании
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам
+нижняя внутрення часть штанов оттедлана высокопрочной тканью cordura</description>
+</offer>
+<offer id="153" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/first-layer/result-shirt</url>
+<price>742500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>86</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SM379A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Термобелье Horsefeathers Result shirt</model>
+<description>термобелье с длинным рукавом
+
+54% polyamide, 40% polypropylene, 6% elastane
+бесшовное и &amp;quot;дышащее&amp;quot;
+антибактериальное покрытие позволяет сохранять свежесть и комфорт во время активностей</description>
+</offer>
+<offer id="154" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/first-layer/result-pants</url>
+<price>675000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>86</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SM380A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Термобелье Horsefeathers Result pants</model>
+<description>термобелье кальсоны
+
+54% polyamide, 40% polypropylene, 6% elastane
+бесшовное и &amp;quot;дышащее&amp;quot;
+антибактериальное покрытие позволяет сохранять свежесть и комфорт во время активностей</description>
+</offer>
+<offer id="155" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/jacket/kent</url>
+<price>1485000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>92</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/SM445A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Куртка Horsefeathers Kent</model>
+<description>куртка городской линии horsefeathers
+
+мембрана 2,000/2,000 (waterproofness/breathability) водоотталкивающая
+утеплитель 80 г/м2
+100% полиэстер
+основные технологии сноубордической одежды - куртка &amp;quot;дышит&amp;quot; и не пропускает влагу внутрь - позволяют сохранять комфорт и надежность и в городских условиях</description>
+</offer>
+<offer id="156" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/sweatshirt/peak</url>
+<price>675000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>59</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/SM454D.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Байка Horsefeathers Peak</model>
+<description>тёплая и очень комфортная толстовка-худи
+classic fit
+
+65% хлопок, 35% полиэстер
+сделано в евросоюзе
+принт на груди</description>
+</offer>
+<offer id="157" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/sweatshirt/rhythm</url>
+<price>1080000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>59</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SM451A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Толстовка Horsefeathers Rhythm</model>
+<description>модная и удобная толстовка-худи
+classic fit
+
+65% хлопок, 35% полиэстер
+вышитый логотип на груди
+пуговицы с логотипом</description>
+</offer>
+<offer id="158" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/sweatshirt/homerun</url>
+<price>1350000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>59</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SM480A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Толстовка Horsefeathers Homerun</model>
+<description>ультрамодная толстовка
+их называют varsity, letterman или просто бейсбольная толстовка
+
+65% хлопок, 35% полиэстер
+вышитый логотип на груди</description>
+</offer>
+<offer id="159" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/sweatshirt/sage-two-tone</url>
+<price>1282500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>59</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SM531A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Толстовка Horsefeathers Sage two-tone</model>
+<description>топовая толстовка на пуговицах
+
+65% хлопок, 35% полиэстер
+вышитый логотип на груди
+пуговицы с логотипом</description>
+</offer>
+<offer id="161" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/milestone</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SM544A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Milestone</model>
+<description>slim fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="162" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/cheers</url>
+<price>432000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SM545B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Cheers</model>
+<description>slim fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="163" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/live-today</url>
+<price>432000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SM542A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Live today</model>
+<description>slim fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="164" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/horizon</url>
+<price>351000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/SM463C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Horizon</model>
+<description>classic fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="165" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/david</url>
+<price>472500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/SM465C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers David</model>
+<description>slim fit
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="166" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/t-shirt/tourism</url>
+<price>432000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>65</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/SM470B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Tourism</model>
+<description>classic fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="167" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/patchwork</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/AA523B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Patchwork</model>
+<description>зимняя шапка
+
+100% acrylic
+внутри флисовая подкладка
+универсальный размер</description>
+</offer>
+<offer id="168" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/double-trouble</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>91</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_ADDITIONAL/AA585D_1.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Double trouble</model>
+<description>двусторонняя зимняя шапка
+
+100% acrylic
+логотип на одной стороне и название бренда с другой стороны
+универсальный размер</description>
+</offer>
+<offer id="169" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/groovy</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA587E.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Groovy</model>
+<description>зимняя шапка
+
+100% acrylic
+универсальный размер</description>
+</offer>
+<offer id="170" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/crazy</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>91</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA574A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Сrazy</model>
+<description>зимняя шапка
+
+100% acrylic
+внутри флисовая подкладка
+универсальный размер</description>
+</offer>
+<offer id="171" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/hangover</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA590B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Hangover</model>
+<description>двусторонняя зимняя шапка
+
+100% acrylic
+логотип на одной стороне и название бренда с другой стороны
+универсальный размер</description>
+</offer>
+<offer id="172" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/bad-boy</url>
+<price>283500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>87</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA591A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Bad boy</model>
+<description>двусторонняя зимняя шапка
+
+100% acrylic
+логотип на одной стороне и название бренда с другой стороны
+универсальный размер</description>
+</offer>
+<offer id="173" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/nepali</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>91</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA576A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Nepali</model>
+<description>зимняя шапка
+
+100% acrylic
+внутри флисовая подкладка
+универсальный размер</description>
+</offer>
+<offer id="174" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/beanies/max</url>
+<price>405000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>91</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA508E.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Шапка Horsefeathers Max</model>
+<description>зимняя шапка
+
+100% acrylic
+универсальный размер</description>
+</offer>
+<offer id="175" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/belts-wallets/ginger</url>
+<price>675000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>71</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA595B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Ремень кожаный Horsefeathers Ginger</model>
+<description>100% натуральная кожа, ручная работа
+
+универсальный размер (one size)
+пряжка с логотипом
+тиснённый логотипом на ремешке</description>
+</offer>
+<offer id="176" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/first-layers/it-thermolite</url>
+<price>324000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>90</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/AA596C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Термоноски Horsefeathers IT thermolite</model>
+<description>сноубордические носки thermolite
+
+35% polyacrylic, 30% thermolite, 20% polypropylene, 10% wool 5% elastane
+синтетическое волокно thermolite сохраняет тепло, отводит влагу с поверхности ног при активных физических нагрузках, быстро сохнет</description>
+</offer>
+<offer id="177" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/first-layers/comic-thermolite</url>
+<price>324000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>90</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES/AA524B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Термоноски Horsefeathers Сomic thermolite</model>
+<description>сноубордические носки thermolite
+
+35% polyacrylic, 30% thermolite, 20% polypropylene, 10% wool 5% elastane
+синтетическое волокно thermolite сохраняет тепло, отводит влагу с поверхности ног при активных физических нагрузках, быстро сохнет</description>
+</offer>
+<offer id="178" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/snowjackets/luna</url>
+<price>2430000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>88</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OW095A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Luna</model>
+<description>сноубордическая куртка
+
+100% recycled nylon
+мембрана 15,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель primaloft eco® сохраняет тепло, отводит испарение от тела, не пропукает влагу снаружи и ветер
+система вентиляции
+швы полностью проклеены
+водонепроницаемые молнии ykk
+внутренний карман для маски, перчаток и аудио
+отсоединяемая эластичная юбка против попадания снега под куртку
+манжет с прорезью на большой палец для защиты от попадания снега в рукав
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="179" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/snowjackets/altair</url>
+<price>2565000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>88</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OW100D.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Altair</model>
+<description>сноубордическая куртка
+
+100% polyester twill
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+удлинённая, long cut
+
+утеплитель 80 г/м2
+система вентиляции
+швы полностью проклеены
+водонепроницаемые молнии ykk
+внутренний карман для маски, перчаток и аудио
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="180" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/snowjackets/atrei</url>
+<price>2565000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>88</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OW110D.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Atrei</model>
+<description>сноубордическая куртка
+
+100% nylon
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+удлинённая, long cut
+
+утеплитель 100 г/м2
+система вентиляции
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для маски, перчаток и аудио
+карман для скипасса на рукаве
+эластичная юбка против попадания снега под куртку
+манжет с прорезью на большой палец для защиты от попадания снега в рукав
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="181" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/snowjackets/mira</url>
+<price>1620000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>88</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OW104C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Mira</model>
+<description>сноубордическая куртка
+
+100% polyester ottoman
+мембрана 5,000/5,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для маски и аудио
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="182" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/snowjackets/carina</url>
+<price>1755000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>88</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OW105C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Carina</model>
+<description>сноубордическая куртка
+
+100% polyester ottoman
+мембрана 5,000/5,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для маски и аудио
+эластичная юбка против попадания снега под куртку
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="183" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/snowjackets/riga</url>
+<price>2700000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>88</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OW111C.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордическая куртка Horsefeathers Riga</model>
+<description>сноубордическая куртка
+
+100% nylon
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+удлинённая, long cut
+
+утеплитель 100 г/м2
+система вентиляции
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+внутренний карман для маски, перчаток и аудио
+карман для скипасса на рукаве
+эластичная юбка против попадания снега под куртку
+манжет с прорезью на большой палец для защиты от попадания снега в рукав
+возможность присоединить куртку к штанам</description>
+</offer>
+<offer id="185" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/snowpants/prior</url>
+<price>2430000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>89</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OW118A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Prior</model>
+<description>сноубордические штаны
+
+100% nylon
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+низкая талия
+slim fit
+
+швы полностью проклеены
+водонепроницаемые молнии ykk
+система вентиляции
+регулируемая длина пояса
+отсоединяемый пояс-юбка, не позволяющий снегу попадать под одежду при агрессивном катании
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="187" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/snowpants/tris</url>
+<price>1890000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>89</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR_MAIN/OW120E.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Tris</model>
+<description>сноубордические штаны
+
+100% polyester ottoman
+мембрана 5,000/5,000 (waterproofness/breathability) водоотталкивающая
+slim fit
+
+утеплитель 40 г/м2
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+система вентиляции
+регулируемая длина пояса
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="188" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/snowpants/sterion</url>
+<price>1755000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>85</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OW107A_1.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Sterion</model>
+<description>сноубордические штаны
+
+100% polyester twill
+мембрана 10,000/10,000 (waterproofness/breathability) водоотталкивающая
+regular fit
+
+утеплитель 80 г/м2
+швы полностью проклеены
+водонепроницаемые молнии ykk
+система вентиляции
+регулируемая длина пояса
+отсоединяемый пояс-юбка, не позволяющий снегу попадать под одежду при агрессивном катании
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="189" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/snowpants/gatria</url>
+<price>1485000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>89</categoryId>
+<picture>http://armadashop.by/image/data/OUTERWEAR/OW109D.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Сноубордические штаны Horsefeathers Gatria</model>
+<description>сноубордические штаны
+
+100% polyester ottoman
+мембрана 5,000/5,000 (waterproofness/breathability) водоотталкивающая
+slim fit
+
+утеплитель 80 г/м2
+швы проклеены в критических местах
+водонепроницаемые молнии ykk
+регулируемая длина пояса
+крючки на манжетах брюк для крепления к ботинку
+возможность сприсоединить куртку к штанам</description>
+</offer>
+<offer id="190" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/first-layers/camino-shirt</url>
+<price>675000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>90</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SW317A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Термобелье Horsefeathers Сamino shirt</model>
+<description>термобелье с длинным рукавом
+
+54% polyamide, 40% polypropylene, 6% elastane
+бесшовное и &amp;quot;дышащее&amp;quot;
+антибактериальное покрытие позволяет сохранять свежесть и комфорт во время активностей</description>
+</offer>
+<offer id="191" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/first-layers/camino-pants</url>
+<price>607500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>90</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SW318A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Термобелье Horsefeathers Camino pants</model>
+<description>термобелье леггинсы
+
+54% polyamide, 40% polypropylene, 6% elastane
+бесшовное и &amp;quot;дышащее&amp;quot;
+антибактериальное покрытие позволяет сохранять свежесть и комфорт во время активностей</description>
+</offer>
+<offer id="192" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/sweatshirts/draft</url>
+<price>1215000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SW432B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Толстовка Horsefeathers Draft</model>
+<description>ультрамодная толстовка
+их называют varsity, letterman или просто бейсбольная толстовка - девочки это для вас!
+
+65% хлопок, 35% полиэстер
+флисовая подкладка
+удобный манжет с прорезью на большой палец</description>
+</offer>
+<offer id="193" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/sweatshirts/trouble</url>
+<price>1080000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SW399A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Байка удлиненная Horsefeathers Trouble</model>
+<description>топовая толстовка
+удлиннённая модель oversize cut
+
+95% хлопок, 5% эластан
+удобный манжет с прорезью на большой палец</description>
+</offer>
+<offer id="194" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/sweatshirts/goodbye-to-you</url>
+<price>1080000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>64</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SW378D.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Толстовка Horsefeathers Goodbye to you</model>
+<description>стильная толстовка-худи
+отлично сидит по фигуре, не вытягивается
+
+95% хлопок, 5% эластан
+принт на груди и спине
+контрастные пуговицы м логотипом</description>
+</offer>
+<offer id="195" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/t-shirts/better-blondes</url>
+<price>472500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>66</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SW434B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Better Blondes</model>
+<description>regular fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="196" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/t-shirts/jungle</url>
+<price>432000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>66</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SW440A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Футболка Horsefeathers Jungle</model>
+<description>slim fit
+
+100% хлопок
+принт на груди</description>
+</offer>
+<offer id="197" type="vendor.model" available="true" >
+<url>http://armadashop.by/womens/t-shirts/united</url>
+<price>432000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>66</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SW437A.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Майка Horsefeathers United</model>
+<description>classic fit
+
+100% хлопок
+принт на груди
+шнуровка по нижнему канту</description>
+</offer>
+<offer id="198" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/firevest/fire-soft-shell</url>
+<price>2700000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/Heated_clothing/AJ9/soft-vest2.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Жилетка с подогревом Alpenheat Fire soft shell</model>
+<description>жилет-мембрана с подогревом fire soft shell идеален для долгих активностей в холодное время года: зимние виды спорта, охота, рыбалка, прогулки с собакой, туризм и т.п.
+
+ключевые особенности soft shell:
+
+
+	стильный спортивный дизайн
+	ветро- и водостойкая мембрана 5000 мм/2000 мм (waterproof/breathability)
+	изготовлен из изностостойкого 3-хслойного дышащего материала - испарение от тела легко выводится на внешнюю поверхность материала оставляя тело сухим
+	не стесняет движений и очень удобен в носке, как под курткой, так и на свитер без куртки
+	можно стирать при температуре 30 с
+
+
+
+	характеристики обогрева:
+	
+	5 уровней подогрева для любых холодных условий: от легких до суровых!
+	простое управление при помощи кнопки на компактном и легком регуляторе (55х70х25мм), которые незаметно помещается в карман
+	обогрев происходит при помощи обширного нагревательного элемента из биотермических волокон, встроенного в спину жилета, и почти неощутимого сквозь эластичный материал
+	0т 2 до 8 часов непрерывного обогрева без подзарядки
+	перезаряжаемые мощные литий-ионные аккумуляторы (7.4v/2.2ah). время зарядки около 4 часов при полном истощении.
+	индикатор уровня заряда аккумулятора позволяет вам держать своё тепло под контролем!
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="199" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/firevest/fire-fleece</url>
+<price>2295000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>98</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/alpenheat_winter/AH_LIFE_JM_0003.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Жилетка с подогревом Alpenheat Fire fleece</model>
+<description>жилет fire fleece объединяет в себе передовые технологии в разработке одежды с подогревом австрийской компании alpenheat и преимущества флиса - комфорт, не требует специального ухода, не вызвывает аллергию, а все термоизолирующие свойства сохраняются даже при намокании флисовой поверхностию.
+тонкий и одновременно теплый, приятный материал флиса делает этот жилет незаменимым в холодное время года.
+не мёрзните больше, а получайте удовольствие от зимы!
+
+ключевые особенности fire fleece:
+
+
+	стильный спортивный дизайн
+	жилет выполнен из тонкого теплого флиса, который делает его мягкой защитой от холода!
+	удобно носить в нижнем слое одежды, под курткой или под свитером. не стесняет движений.
+	можно стирать при температуре 30 с
+
+
+
+	характеристики обогрева:
+	
+	5 уровней подогрева для любых холодных условий: от легких до суровых!
+	простое управление при помощи кнопки на компактном и легком регуляторе (55х70х25мм), которые незаметно помещается в карман
+	обогрев происходит при помощи обширного нагревательного элемента из биотермических волокон, встроенного в спину жилета, и почти неощутимого сквозь эластичный материал
+	0т 2 до 8 часов непрерывного обогрева без подзарядки
+	перезаряжаемые мощные литий-ионные аккумуляторы (7.4v/2.2ah). время зарядки около 4 часов при полном истощении.
+	индикатор уровня заряда аккумулятора позволяет вам держать своё тепло под контролем!
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="200" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/bootheater/comfort-standard-pb</url>
+<price>2700000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/Bootheaters/Comfort/Set1-192_72jpg.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Стельки с подогревом Alpenheat Comfort standard pb</model>
+<description>стельки с подогревом comfort помогут решить пробемы c замерзшими ногами, а ведь замерзшие конечности первый шаг к простуде.
+
+ощутите ни с чем не сравнимый комфорт в зимнее время года, где бы вы не находились - на работе, сноуборде, лыжах, охоте, рыбалке или просто прогулке!
+
+стелька с подогревом comfort изготовляется с учетом анатомического строения стопы.
+
+изготовлены из революционного материала vildona®, способного эффективно поглощать влагу, позволяют ногам дышать и имеют очень высокие термоизоляционные показатели
+
+компактный блок аккумуляторов надежно защелкивается на крепежном клипсе, который легко крепится на ботинок или на голень с помощью ленты &amp;quot;велькро&amp;quot;.
+
+ключевые особенности:
+
+
+	нагревательный элемент (43 кв.см.), покрывающий всю переднюю площадь ступни. при этом инфракрасное излучение улучшает циркуляцию крови, что обеспечивает распространение тепла по всей стопе
+	материал стельки: пробка, з мм, подходит для любой обуви
+	vildona® drysole абсорбирует влажность в вашей обуви, позволяя ногам дышать
+	стелька тонкая и абсолютно не мешает и не чувствуется в обуви, подходит для любой обуви
+	регулятор обогрева на 3 режима
+	вы можете сами контролировать обогрев выключателем на блоке
+	до 16 часов обогрева в зависимости от выбранной температуры
+	поставляемые aa nimh&amp;nbsp;аккумуляторные батареи (4.8V / 2.0 Ah / 9.6Wh)&amp;nbsp;могут быть легко заменены на любые аа-батареи при желании
+	время зарядки около 10 часов
+	комплектация: стельки, 2 блока батарей, зарядное устройство alpenheat comfort 230 в/ 50гц, блоки управления, крепления
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="201" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/bootheater/trend</url>
+<price>1282500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>99</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/Bootheaters/Trend/Set1-027_72.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Стельки с подогревом Alpenheat Trend</model>
+<description>стельки с подогревом trend - лидер по продажам в своем сегменте !
+
+за весьма конкурентноспособную цену вы получаете решение пробемы c замерзшими ногами, а ведь замерзшие конечности первый шаг к простуде.
+
+ощутите ни с чем не сравнимый комфорт в зимнее время года, где бы вы не находились - на работе, сноуборде, лыжах, охоте, рыбалке или просто прогулке!
+
+стельки с подогревом alpenheated trend способны до 14 часов, держать ваши ноги в сухости и тепле.
+
+стелька тонкая и абсолютно не мешает и не чувствуется в обуви
+
+вы сами выбираете способ крепления батарей, который более удобен для вас - на задней части обуви с помощью застежки-клипсы или на ноге с помощью застежки-липучки.
+
+ключевые особенности:
+
+
+	нагревательный элемент (20 кв.см.) расположен в передней части стопы, под пальцами. при этом инфракрасное излучение улучшает циркуляцию крови, что обеспечивает распространение тепла по всей стопе
+	изготовлены из 2мм полиуретановой пены для удобного подрезания под нужный размер ноги (от 33-го до 48-го).
+	до 14 часов прогрева ног (в зависимости от используемых батарей)
+	вы можете сами контролировать обогрев выключателем на блоке
+	регулятор мощности на 3 режима
+	удобный контейнер для всех типов аа-батарей с led-дисплеем (батарейки в комплект не входят)
+	комплектация: стельки, блоки управления, крепления
+	конкуретноспособная цена по сравнению с аналогами
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="202" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/bootdryer/dry4-230v</url>
+<price>1485000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>100</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/BootDryers/AD1_Dry4/dry4_9_72.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Сушилка для обуви Alpenheat Dry4 230v</model>
+<description>сушилка dry4 имеет 4 высоких сушильных стойки, что позволяет сушить 4 предмета одновременно.
+
+высокоэффективный, практически бесшумный ротационный вентилятор подает нагретый воздух или воздух комнатной температуры, обеспечивая очень быструю сушку и сохранение качества обуви
+
+перестаньте портить обувь сушкой на батареях
+
+со временем вы обнаружите, что уже давно круглый год используете dry4 для сушки спортивной или рабочей обуви, перчаток и других предметов одежды. дождь, снег, мокрая обувь после спорта - больше не навредят вашей обуви и ногам, так что смело прыгайте по лужам:-)
+
+функциональные характеристики:
+
+
+	легко сушит 4 предмета одноврменно (обувь, перчатки, шлем, головные уборы)
+	устраняет неприятный запах, не позволяет бактериям задержаться
+	таймер включения/отключения на 3 часа
+	2 режима работы - сушка холодным и нагретым воздухом
+	время сушки 1-2 часа
+	питание: 230v/50hz
+	веc 1.25 кг
+	размеры: 18x24.5x32.1см
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="203" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/bootdryer/universal-dry-230v</url>
+<price>1350000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>100</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/BootDryers/AD2_UniversalDry/Set1-090_72.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Сушилка для обуви Alpenheat Universal dry 230v</model>
+<description>благодаря 3 различным воздушным насадкам сушилка universaldry может сушить 1 или 2 пары обуви одновременно.
+
+можно ускорить сушку обуви, используя раздвижные гибкие трубки
+
+высокоэффективный, бесшумный центробежный вентилятор подает воздух с одним из двух уровней подогрева по выбору, обеспечивая мягкую сушку любых видов обуви, ботинок и перчаток.
+
+перестаньте портить обувь сушкой на батареях
+
+сушилку universaldry можно эксплуатировать как в непрерывном режиме, так и с регулировкой времени работы с помощью 3-часового таймера.
+
+вы легко найдете место для universaldry благодаря различным методам установки: настенный или свободностоящий.
+
+функциональные характеристики
+
+
+	3 различные воздушные насадки:
+	насадка для 1 пары обуви или перчаток
+	насадка для 2 пар обуви или перчаток
+	насадка с гибкими трубками для 1 пары обуви
+	непрерывный режим или таймер до 180 минут
+	два темературных режима сушки
+	предусмотрена возможность настенной установки
+	рекомендуемое время сушки 1-3 часа
+	вес: 1,5 кг
+	размеры: 27х37х23 см
+	питание: 230v/50hz или 120v/60hz
+	мощность: 230 ватт
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="204" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/bootdryer/compact-dry-ionizer-230v</url>
+<price>1012500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>100</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/BootDryers/AD11_CompactDry_Ionizer/CompactDry_Ionizer_34_72.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Сушилка для обуви Alpenheat Сompact dry ionizer 230v</model>
+<description>compact dry ionizer - это самая компактная из моделей. оптимальный вариант для сушки, подогрева и гигиенической чистки (ионизации) обуви !!
+
+перестаньте портить обувь сушкой на батареях
+
+в 2012 г. получила награду &amp;quot;plus x award&amp;quot; - международная награда за достижения в спортивной технологии, лучший продукт года
+
+практически бесшумна в работе.
+
+воздух нагревается до 37°c как температура тела, что не портит и не деформирует обувь и другие предметы одежды.
+
+для удобства хранения ножки задвигаются нажатием клавиши. благодаря своей компактности её без проблем можно взять с собой на горнолыжный курорт, например, чтобы ваши ноги всегда были сухими и защищенными от бактерий !
+
+функциональные характеристики:
+
+
+	2-хчасовой таймер времени сушки
+	выдвижные ножки
+	интегрированный ионизатор, защитит от развития бактерий, которые распространяют неприятный запах
+	боковые и верхние воздушные отверстия для быстрой сушки
+	время сушки: 1-2 часа
+	мощность: 180 ватт
+	таймер времени сушки на 2 часа
+	размер: 28х18х10см
+	вес: 1.5кг
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="205" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/bootdryer/circulation-12v-car-adapter</url>
+<price>472500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>100</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/BootDryers/Circulation/AD6_12V/Set1-018_72.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Сушилка для обуви Alpenheat Сirculation 12v + car adapter</model>
+<description>сушит и греет обувь, пока вы едите на машине домой !
+
+это одна из самых энергоэкономичных и портативных моделей сушилок.
+
+подключается к прикуривателю&amp;nbsp;автомобиля, что позволит сделать ваш отдых на природе комфортным и не опасаться внезапного промокания обуви.
+
+эта сушилка может быть идеально использована для предварительного прогрева холодной обуви.
+
+принцип её работы основан на конвекции. предусмотренные конструкцией ножки, поднимают сушилку над стелькой внутри ботинка для свободной циркуляции теплого воздуха.
+уникальная система venturi работает как карбюратор, затягивая более холодный воздуха снизу и выпуская его через верх.
+постоянная конвекция воздуха снижает время сушки и подогрева.
+
+ключевые особенности:
+
+
+	прогревает и сушит (в т.ч. пока вы едите за рулём, например, после катания на сноубордах, после охоты в дождь или рыбалки!)
+	компактная, портативная и легкая
+	легко помещаеться в обуви
+	работает бесшумно
+	питание от прикуривателя автомобиля
+	размеры: 5х3.8х15 см
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="206" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/bootdryer/circulation-230v</url>
+<price>540000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>100</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/BootDryers/Circulation/AD9_UV/Set1-008_72.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Сушилка для обуви Alpenheat Circulation uv 230v</model>
+<description>alpenheat circulation uv - это модификация сушилки для обуви с функцинями подогрева alpenheat circulation с добавленой функцией уничтожения бактерий ультрафиолетовыми лучами.
+
+как и базовая модель, это одна из самых энергоэкономичных и портативных моделей сушилок.
+эта сушилка может быть идеально использована для предварительного прогрева холодной обуви.
+
+принцип её работы основан на конвекции. предусмотренные конструкцией ножки, поднимают сушилку над стелькой внутри ботинка для свободной циркуляции теплого воздуха.
+уникальная система venturi работает как карбюратор, затягивая более холодный воздуха снизу и выпуская его через верх.
+постоянная конвекция воздуха снижает время сушки и подогрева.
+
+ключевые особенности:
+
+
+	сушилка и грелка
+	уничтожает бактерии ультрафиолетом
+	компакная, портативная и легкая
+	легко помещаеться в обуви
+	работает бесшумно от сети
+	размеры: 5х3.8х15 см
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="207" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/grip/gripping-grips</url>
+<price>337500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>101</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/Grips/Grips_(3).jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Шипы для обуви против скольжения Alpenheat Gripping grips</model>
+<description>хорошо скользить в коньках на катке! но падения от того, что подскользнулся на льду, мало кому придется по душе.
+пора позаботиться о своей безопасности, а также сохранности своих детей, родителей и близких.
+шипы для обуви grips значительно улучшают сцепление на снегу и льду.
+высококачественные нержавеющие шипы под стопой и пяткой обеспечивают отличную защиту от скольжения и падения на скользких поверхностях.
+grips растягиваются и легко надеваются на любую обувь (для больших ботинок выбирайте товар на размер больше). гибкие и компактные, их легко транспортировать и хранить.
+материал: низкотемпературный эластомер
+grips не подходят для альпинизма</description>
+</offer>
+<offer id="208" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/heated-accessories/fire-cushion</url>
+<price>1012500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>102</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/Heated_Accessories/aj13_1_small_.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Коврик с подогревом Alpenheat Fire cushion</model>
+<description>коврик с подогревом alpenheat heated cushion станет для ваших ножек лучшей грелкой, а также может заменить сушилку для обуви - просто положите его около входной двери.
+
+вы можете положить его под или на ковер у себя дома или в офисе, в любом месте где хотите быть согретым, даже в машине !
+
+со временем вы обнаружите, что ваш домашний питомец тоже на него претендует - ведь все любят греться особенно в морозный день !
+
+его можно стирать без проблем
+
+благодаря высокоу уровня обогрева и низкой электропотребности, данная модель коврика быстро и максимально комфортно обеспечит вашим ногам должную заботу в холодных условиях и вы не заболеете.
+
+ключевые характеристики:
+
+
+	изготовлена из плотного водоотталкивающего материала
+	мощность 230v для использования дома или 12v для использования от прикуривателя автомобиля
+	размеры: 80х30 см
+	цвет: черный
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="209" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/heated-accessories/fire-pack</url>
+<price>94500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>102</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/Heated_Accessories/AJ12_heat_packs/AJ_12.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Одноразовые грелки Alpenheat Fire pack</model>
+<description>одноразовый fire-pack -&amp;nbsp;портативная мини-грелка, проверенное австрийское качество&amp;nbsp;alpenheat.&amp;nbsp;
+
+активируется при взаимодействии с воздухом, безопасна и экологична.
+
+просто откройте герметичную упаковку и положите грелку&amp;nbsp;в перчатки или варежки, носки, в обувь, в карман куртки или джемпера, под одеяло,&amp;nbsp;в коляску, в любое место, где вам необходим дополнительный обогрев.
+
+мини-грелка неощутима и незаметна, но обеспечивает гарантированное тепло и комфорт в течение 12 часов.
+
+незаменима для лыжников, сноубордистов,&amp;nbsp;охотников, рыбаловов,&amp;nbsp;туристов, путешественников и всех, кто любит активный отдых даже в холодную погоду. Тепло улучшает кровообращение и облегчает мышечную боль при физических нагрузках.
+идельно подходит для длительных прогулок в холодное время года.&amp;nbsp;Положите небольшой пакетик грелки&amp;nbsp;в вашу обувь, ваши ноги будут вам благодарны - не создаст дискомфорт при прогулках, но обеспечит гарантироанное тепло и сухость.&amp;nbsp;
+не забывайте, что благодаря согреванию рук, ног и тела, уменьшается боль&amp;nbsp;в мышцах, при судоргах и спазмах, спортивных травмах, улучшается&amp;nbsp;кровообращение.
+а если ваша работа связана с длительным пребыванием на свежем воздухе, тем более в морозный день&amp;nbsp;- такая теплотерапия для вас обязательна!
+
+ключевые характеристики
+
+
+	обогрев до 12 часов
+	2 штуки в комплекте
+	одноразовое использование
+	размер: 10х13 см
+	универсальное&amp;nbsp;использование в холодную погоду и/или&amp;nbsp;при занятии спортом для уменьшения боли в мышцах и при травмах.
+	экологически безопасные
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="210" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/pet-cushion/fire-pet-cushion</url>
+<price>1350000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>103</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/Heated_Accessories/AJ11_pet_cushion/aj11_5_klein.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Подстилка для животных с подогревом Alpenheat Fire pet-cushion small</model>
+<description>подарите своему любимцу еще больше наслаждения от релаксации на тепленьком матрасе и он вернёт вам любви во много раз больше
+
+представляем вашему вниманию уникальную кровать для ваших любимцев - fire pet cushion.
+
+в комплекте имеються адаптер питания от сети и от автомобильного прикуривателя.
+
+идеально для использования дома, в гараже, подвале, машине или в любом другом месте, где необходимо дополнительный обогрев.
+
+ключевые особенности:
+
+
+	размер s для маленьких и средних собак и кошек: 55х50 см
+	флисовая подкладка
+	износостойкий внешний материал
+	можно стирать без проблем
+	низкое энергопотребление
+	изготовлен из 3-х слойного дышащего материала
+	адаптер питания от сети на 230в и от автомобильного прикуривателя 12в
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="211" type="vendor.model" available="true" >
+<url>http://armadashop.by/heated/pet-cushion/fire-pet-cushion-large</url>
+<price>1620000.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>103</categoryId>
+<picture>http://armadashop.by/image/data/AH_pics/Heated_Accessories/AJ11_pet_cushion/large_petcushion.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Alpenheat</vendor>
+<model>Лежанка для животных с подогревом Alpenheat Fire pet-cushion large</model>
+<description>подарите своему любимцу еще больше наслаждения от релаксации на тепленьком матрасе и он вернёт вам любви во много раз больше
+
+представляем вашему вниманию уникальную кровать для ваших любимцев - fire pet cushion.
+
+в комплекте имеются адаптер питания от сети и от автомобильного прикуривателя.
+
+идеально для использования дома, в гараже, подвале, машине или в любом другом месте, где необходимо дополнительный обогрев.
+
+ключевые особенности:
+
+
+	размер l для собак больших размеров: 80х60 см
+	флисовая подкладка
+	износостойкий внешний материал
+	можно стирать без проблем
+	низкое энергопотребление
+	изготовлен из 3-х слойного дышащего материала
+	адаптер питания от сети на 230в и от автомобильного прикуривателя 12в
+
+
+&amp;nbsp;</description>
+</offer>
+<offer id="213" type="vendor.model" available="true" >
+<url>http://armadashop.by/mens/sweatshirt/dude</url>
+<price>1147500.00</price>
+<currencyId>BYR</currencyId>
+<categoryId>59</categoryId>
+<picture>http://armadashop.by/image/data/STREETWEAR_ACCESSORIES_MAIN/SM525B.jpg</picture>
+<delivery>true</delivery>
+<local_delivery_cost>30000</local_delivery_cost>
+<vendor>Horsefeathers</vendor>
+<model>Свитер Horsefeathers Dude II</model>
+<description>Самый модный в этом сезоне - вязаный свитер с воротником&amp;nbsp;V-neck.&amp;nbsp;
+Свитер очень теплый и&amp;nbsp;мягкий, приятный к телу. Сам ношу :-)
+
+Пуговицы с логотипом.
+
+Состав:
+100% Acrylic
+&amp;nbsp;</description>
+</offer>
+</offers>
+</shop></yml_catalog>

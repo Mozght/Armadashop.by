@@ -1,0 +1,1488 @@
+--- PAGE URL: index.php ---
+
+[/home/armadash/public_html/index.php]
+Query Time: 0.0037 :: SELECT * FROM oc_store WHERE REPLACE(`url`, 'www.', '') = 'http://armadashop.by/'
+Aggregate: 0.0037
+
+[/home/armadash/public_html/index.php]
+Query Time: 0.063 :: SELECT * FROM oc_setting WHERE store_id = '0' OR store_id = '0' ORDER BY store_id ASC
+Aggregate: 0.0667
+
+[/home/armadash/public_html/index.php]
+Query Time: 0.0027 :: SELECT * FROM `oc_language` WHERE status = '1'
+Aggregate: 0.0694
+
+[/home/armadash/public_html/system/library/currency.php]
+Query Time: 0.0064 :: SELECT * FROM oc_currency
+Aggregate: 0.0758
+
+[/home/armadash/public_html/system/library/weight.php]
+Query Time: 0.0039 :: SELECT * FROM oc_weight_class wc, oc_weight_class_description wcd  WHERE wcd.language_id = '2'AND wc.weight_class_id = wcd.weight_class_id
+Aggregate: 0.0797
+
+[/home/armadash/public_html/system/library/length.php]
+Query Time: 0.0015 :: SELECT * FROM oc_length_class mc,  oc_length_class_description mcd  WHERE mcd.language_id = '2'AND mc.length_class_id = mcd.length_class_id
+Aggregate: 0.0812
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.003 :: SELECT `value` FROM `oc_setting` WHERE `key` = 'config_language'
+Aggregate: 0.0842
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0015 :: SELECT * FROM oc_language WHERE status = '1'
+Aggregate: 0.0857
+
+[/home/armadash/public_html/catalog/model/design/layout.php]
+Query Time: 0.0021 :: SELECT * FROM oc_layout_route WHERE 'common/home' LIKE CONCAT(route, '%') AND store_id = '0' ORDER BY route DESC LIMIT 1
+Aggregate: 0.0878
+
+[/home/armadash/public_html/catalog/model/setting/extension.php]
+Query Time: 0.0029 :: SELECT * FROM oc_extension WHERE `type` = 'module'
+Aggregate: 0.0907
+
+[/home/armadash/public_html/catalog/model/design/layout.php]
+Query Time: 0.0003 :: SELECT * FROM oc_layout_route WHERE 'common/home' LIKE CONCAT(route, '%') AND store_id = '0' ORDER BY route DESC LIMIT 1
+Aggregate: 0.091
+
+[/home/armadash/public_html/catalog/model/setting/extension.php]
+Query Time: 0.0002 :: SELECT * FROM oc_extension WHERE `type` = 'module'
+Aggregate: 0.0912
+
+[/home/armadash/public_html/catalog/model/design/layout.php]
+Query Time: 0.0002 :: SELECT * FROM oc_layout_route WHERE 'common/home' LIKE CONCAT(route, '%') AND store_id = '0' ORDER BY route DESC LIMIT 1
+Aggregate: 0.0914
+
+[/home/armadash/public_html/catalog/model/setting/extension.php]
+Query Time: 0.0002 :: SELECT * FROM oc_extension WHERE `type` = 'module'
+Aggregate: 0.0916
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0022 :: SELECT DISTINCT ps.product_id, (SELECT AVG(rating) FROM oc_review r1 WHERE r1.product_id = ps.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating FROM oc_product_special ps, oc_product p, oc_product_description pd , oc_product_to_store p2s  WHERE p.product_id = p2s.product_id AND p.product_id = pd.product_id AND ps.product_id = p.product_id AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0' AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) GROUP BY ps.product_id ORDER BY LCASE(pd.name) ASC, LCASE(pd.name) ASC LIMIT 0,12
+Aggregate: 0.0938
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0045 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '195' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.0983
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0026 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '195'
+Aggregate: 0.1009
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0089 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '66'
+Aggregate: 0.1098
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0016 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '61'
+Aggregate: 0.1114
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0064 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.1178
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0056 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '67' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.1234
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0021 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '67'
+Aggregate: 0.1255
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '66'
+Aggregate: 0.1258
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0002 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '61'
+Aggregate: 0.126
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0002 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.1262
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0079 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '200' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.1341
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0019 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '200'
+Aggregate: 0.136
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0038 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '99'
+Aggregate: 0.1398
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0022 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '97'
+Aggregate: 0.142
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0002 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.1422
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0057 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '100' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.1479
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0019 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '100'
+Aggregate: 0.1498
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0034 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '73'
+Aggregate: 0.1532
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0002 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.1534
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0019 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '192' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.1553
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0072 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '192'
+Aggregate: 0.1625
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0018 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '64'
+Aggregate: 0.1643
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '61'
+Aggregate: 0.1646
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0002 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.1648
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0026 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '87' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.1674
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0005 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '87'
+Aggregate: 0.1679
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0004 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '71'
+Aggregate: 0.1683
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '61'
+Aggregate: 0.1686
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.1689
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0021 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '86' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.171
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0019 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '86'
+Aggregate: 0.1729
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0015 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '70'
+Aggregate: 0.1744
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0022 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '60'
+Aggregate: 0.1766
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.1769
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0027 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '85' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.1796
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0006 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '85'
+Aggregate: 0.1802
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '70'
+Aggregate: 0.1805
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0002 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '60'
+Aggregate: 0.1807
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0002 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.1809
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0071 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '90' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.188
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0016 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '90'
+Aggregate: 0.1896
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '73'
+Aggregate: 0.1899
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0002 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.1901
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0019 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '156' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.192
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0016 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '156'
+Aggregate: 0.1936
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0012 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '59'
+Aggregate: 0.1948
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '60'
+Aggregate: 0.1951
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0002 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.1953
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0023 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '50' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.1976
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0016 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '50'
+Aggregate: 0.1992
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '59'
+Aggregate: 0.1995
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '60'
+Aggregate: 0.1998
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0004 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2002
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0021 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '65' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2023
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0019 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '65'
+Aggregate: 0.2042
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '66'
+Aggregate: 0.2045
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '61'
+Aggregate: 0.2048
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2051
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0021 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '74' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2072
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0023 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '74'
+Aggregate: 0.2095
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0005 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '68'
+Aggregate: 0.21
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '60'
+Aggregate: 0.2103
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2106
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0027 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '72' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2133
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0019 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '72'
+Aggregate: 0.2152
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '68'
+Aggregate: 0.2155
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '60'
+Aggregate: 0.2158
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2161
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0021 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '75' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2182
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0019 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '75'
+Aggregate: 0.2201
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0005 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '69'
+Aggregate: 0.2206
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '61'
+Aggregate: 0.2209
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2212
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0023 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '98' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2235
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0019 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '98'
+Aggregate: 0.2254
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0005 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '80'
+Aggregate: 0.2259
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '60'
+Aggregate: 0.2262
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2265
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0021 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '162' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2286
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0019 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '162'
+Aggregate: 0.2305
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0005 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '65'
+Aggregate: 0.231
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '60'
+Aggregate: 0.2313
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2316
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0021 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '56' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2337
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0019 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '56'
+Aggregate: 0.2356
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0004 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '65'
+Aggregate: 0.236
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '60'
+Aggregate: 0.2363
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2366
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0031 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '197' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2397
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0023 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '197'
+Aggregate: 0.242
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '66'
+Aggregate: 0.2423
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '61'
+Aggregate: 0.2426
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2429
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0019 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '53' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2448
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0024 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '53'
+Aggregate: 0.2472
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '64'
+Aggregate: 0.2475
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '61'
+Aggregate: 0.2478
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2481
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0052 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '158' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2533
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0038 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '158'
+Aggregate: 0.2571
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '59'
+Aggregate: 0.2574
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '60'
+Aggregate: 0.2577
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.258
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0004 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '90' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2584
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '90'
+Aggregate: 0.2587
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '73'
+Aggregate: 0.259
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2593
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0035 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '105' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2628
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0019 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '105'
+Aggregate: 0.2647
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0093 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '77'
+Aggregate: 0.274
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2743
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-catalog_model_catalog_product.php]
+Query Time: 0.0058 :: SELECT DISTINCT *, pd.name AS name, p.image, m.name AS manufacturer, (SELECT price FROM oc_product_discount pd2 WHERE pd2.product_id = p.product_id AND pd2.customer_group_id = '1' AND pd2.quantity = '1' AND ((pd2.date_start = '0000-00-00' OR pd2.date_start < NOW()) AND (pd2.date_end = '0000-00-00' OR pd2.date_end > NOW())) ORDER BY pd2.priority ASC, pd2.price ASC LIMIT 1) AS discount, (SELECT price FROM oc_product_special ps WHERE ps.product_id = p.product_id AND ps.customer_group_id = '1' AND ((ps.date_start = '0000-00-00' OR ps.date_start < NOW()) AND (ps.date_end = '0000-00-00' OR ps.date_end > NOW())) ORDER BY ps.priority ASC, ps.price ASC LIMIT 1) AS special, (SELECT points FROM oc_product_reward pr WHERE pr.product_id = p.product_id AND customer_group_id = '1') AS reward, (SELECT ss.name FROM oc_stock_status ss WHERE ss.stock_status_id = p.stock_status_id AND ss.language_id = '2') AS stock_status, (SELECT wcd.unit FROM oc_weight_class_description wcd WHERE p.weight_class_id = wcd.weight_class_id AND wcd.language_id = '2') AS weight_class, (SELECT lcd.unit FROM oc_length_class_description lcd WHERE p.length_class_id = lcd.length_class_id AND lcd.language_id = '2') AS length_class, (SELECT AVG(rating) AS total FROM oc_review r1 WHERE r1.product_id = p.product_id AND r1.status = '1' GROUP BY r1.product_id) AS rating, (SELECT COUNT(*) AS total FROM oc_review r2 WHERE r2.product_id = p.product_id AND r2.status = '1' GROUP BY r2.product_id) AS reviews, p.sort_order FROM oc_product p, oc_product_description pd, oc_product_to_store p2s,  oc_manufacturer m WHERE  p.product_id = p2s.product_id AND p.manufacturer_id = m.manufacturer_id AND  p.product_id = pd.product_id AND p.product_id = '101' AND pd.language_id = '2' AND p.status = '1' AND p.date_available <= NOW() AND p2s.store_id = '0'
+Aggregate: 0.2801
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0025 :: SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '101'
+Aggregate: 0.2826
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0004 :: SELECT DISTINCT discounts, parent_id as cid FROM oc_category WHERE category_id = '77'
+Aggregate: 0.283
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0003 :: SELECT DISTINCT discount FROM oc_customer_group WHERE customer_group_id = '1'
+Aggregate: 0.2833
+
+[/home/armadash/public_html/catalog/model/design/layout.php]
+Query Time: 0.0003 :: SELECT * FROM oc_layout_route WHERE 'common/home' LIKE CONCAT(route, '%') AND store_id = '0' ORDER BY route DESC LIMIT 1
+Aggregate: 0.2836
+
+[/home/armadash/public_html/catalog/model/setting/extension.php]
+Query Time: 0.0003 :: SELECT * FROM oc_extension WHERE `type` = 'module'
+Aggregate: 0.2839
+
+[/home/armadash/public_html/catalog/model/catalog/information.php]
+Query Time: 0.0298 :: SELECT * FROM oc_information i, oc_information_description id, oc_information_to_store i2s  WHERE id.language_id = '2' AND i2s.store_id = '0' AND i.information_id = id.information_id AND i.information_id = i2s.information_id AND i.status = '1' ORDER BY i.sort_order, LCASE(id.title) ASC
+Aggregate: 0.3137
+
+[/home/armadash/public_html/catalog/model/catalog/information.php]
+Query Time: 0.0005 :: SELECT * FROM oc_information i, oc_information_description id, oc_information_to_store i2s  WHERE id.language_id = '2' AND i2s.store_id = '0' AND i.information_id = id.information_id AND i.information_id = i2s.information_id AND i.status = '1' ORDER BY i.sort_order, LCASE(id.title) ASC
+Aggregate: 0.3142
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0008 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 0 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.315
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0014 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 60 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3164
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 104 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3171
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '104'
+Aggregate: 0.3177
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 84 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3182
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0007 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '84'
+Aggregate: 0.3189
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0047 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 85 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3236
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0021 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '85'
+Aggregate: 0.3257
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 92 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3262
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '92'
+Aggregate: 0.3268
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 87 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3274
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0013 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '87'
+Aggregate: 0.3287
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 59 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3292
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0005 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '59'
+Aggregate: 0.3297
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 67 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3302
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0012 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '67'
+Aggregate: 0.3314
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 65 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3319
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0005 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '65'
+Aggregate: 0.3324
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0017 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 68 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3341
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0013 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '68'
+Aggregate: 0.3354
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 70 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3359
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0021 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '70'
+Aggregate: 0.338
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0056 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 80 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3436
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0016 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '80'
+Aggregate: 0.3452
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0037 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 86 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3489
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0051 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '86'
+Aggregate: 0.354
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0036 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '60'
+Aggregate: 0.3576
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0035 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 61 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3611
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 88 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3617
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0027 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '88'
+Aggregate: 0.3644
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 89 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3651
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0011 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '89'
+Aggregate: 0.3662
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0015 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 91 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3677
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0041 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '91'
+Aggregate: 0.3718
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0053 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 64 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3771
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.001 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '64'
+Aggregate: 0.3781
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0014 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 66 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3795
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0024 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '66'
+Aggregate: 0.3819
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0018 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 69 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3837
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0049 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '69'
+Aggregate: 0.3886
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0045 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 71 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3931
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0032 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '71'
+Aggregate: 0.3963
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0012 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 90 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.3975
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '90'
+Aggregate: 0.3981
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.001 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '61'
+Aggregate: 0.3991
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0058 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 62 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4049
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0021 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 93 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.407
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0016 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '93'
+Aggregate: 0.4086
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0016 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 94 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4102
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0021 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '94'
+Aggregate: 0.4123
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 95 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4129
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '95'
+Aggregate: 0.4135
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 96 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4141
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '96'
+Aggregate: 0.4147
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 78 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4154
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0005 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '78'
+Aggregate: 0.4159
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 79 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4166
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '79'
+Aggregate: 0.4172
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 81 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4178
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0014 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '81'
+Aggregate: 0.4192
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '62'
+Aggregate: 0.4198
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0016 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 77 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4214
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '77'
+Aggregate: 0.422
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 97 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4226
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0008 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 98 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4234
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0005 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '98'
+Aggregate: 0.4239
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 99 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4245
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '99'
+Aggregate: 0.4251
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 100 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4257
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '100'
+Aggregate: 0.4263
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 102 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4269
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '102'
+Aggregate: 0.4275
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 103 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4281
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '103'
+Aggregate: 0.4287
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 101 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4293
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0007 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '101'
+Aggregate: 0.43
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0007 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '97'
+Aggregate: 0.4307
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 73 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4314
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0016 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 76 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.433
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0007 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '76'
+Aggregate: 0.4337
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 75 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4343
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '75'
+Aggregate: 0.4349
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT *
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 74 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4356
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '74'
+Aggregate: 0.4362
+
+[/home/armadash/public_html/catalog/controller/common/seo_pro.php]
+Query Time: 0.0006 :: SELECT CONCAT_WS('_',t9.category_id,t8.category_id,t7.category_id,t6.category_id,t5.category_id,t4.category_id,t3.category_id,t2.category_id,t1.category_id,t0.category_id) AS path FROM oc_category t0 LEFT JOIN oc_category t1 ON (t1.category_id = t0.parent_id) LEFT JOIN oc_category t2 ON (t2.category_id = t1.parent_id) LEFT JOIN oc_category t3 ON (t3.category_id = t2.parent_id) LEFT JOIN oc_category t4 ON (t4.category_id = t3.parent_id) LEFT JOIN oc_category t5 ON (t5.category_id = t4.parent_id) LEFT JOIN oc_category t6 ON (t6.category_id = t5.parent_id) LEFT JOIN oc_category t7 ON (t7.category_id = t6.parent_id) LEFT JOIN oc_category t8 ON (t8.category_id = t7.parent_id) LEFT JOIN oc_category t9 ON (t9.category_id = t8.parent_id) WHERE t0.category_id = '73'
+Aggregate: 0.4368
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 0 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4373
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0004 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 60 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4377
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 104 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4383
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0015 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 84 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4398
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 85 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4405
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 92 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4412
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0016 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 87 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4428
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 59 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4434
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 67 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.444
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0015 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 65 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4455
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0011 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 68 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4466
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0014 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 70 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.448
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0021 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 80 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4501
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0014 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 86 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4515
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 61 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.452
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0015 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 88 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4535
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0009 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 89 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4544
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0009 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 91 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4553
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0014 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 64 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4567
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0019 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 66 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4586
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0017 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 69 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4603
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0016 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 71 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4619
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 90 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4626
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 62 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4631
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 93 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4637
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 94 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4644
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 95 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4651
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0011 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 96 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4662
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 78 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4669
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0011 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 79 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.468
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0016 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 81 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4696
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 77 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4701
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 97 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4706
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 98 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4713
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 99 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.472
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 100 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4726
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 102 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4732
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 103 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4738
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0015 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 101 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4753
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0005 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 73 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4758
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0007 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 76 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4765
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0006 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 75 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4771
+
+[/home/armadash/public_html/catalog/model/catalog/category.php]
+Query Time: 0.0015 :: SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 74 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)
+Aggregate: 0.4786
+
+[/home/armadash/public_html/catalog/model/setting/extension.php]
+Query Time: 0.0008 :: SELECT * FROM oc_extension WHERE `type` = 'total'
+Aggregate: 0.4794
+
+[/home/armadash/public_html/vqmod/vqcache/vq2-system_library_customer.php]
+Query Time: 0.0009 :: SELECT SUM(amount) AS total FROM oc_customer_transaction WHERE customer_id = '0'
+Aggregate: 0.4803
+

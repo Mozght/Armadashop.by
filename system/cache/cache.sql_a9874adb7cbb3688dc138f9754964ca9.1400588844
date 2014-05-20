@@ -1,0 +1,1 @@
+O:8:"stdClass":5:{s:3:"row";a:1:{s:2:"id";s:2:"70";}s:4:"rows";a:2:{i:0;a:1:{s:2:"id";s:2:"70";}i:1;a:1:{s:2:"id";s:2:"71";}}s:8:"num_rows";i:2;s:3:"sql";s:85:"SELECT DISTINCT category_id as id FROM oc_product_to_category WHERE product_id = '86'";s:4:"time";i:1400588724;}

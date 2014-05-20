@@ -1,0 +1,73 @@
+<modification>
+	<id>Optimize Mysql driver</id>
+	<version>1.0.0</version>
+	<vqmver>2.1</vqmver>
+	<author>Gennady Telegin, support@itxd.ru</author>
+	
+    <file name="system/database/mysql.php">
+		<operation>
+			<search position="before"><![CDATA[
+            final class MySQL {
+            ]]></search>
+			<add><![CDATA[
+class MySqlRowIterator implements Iterator {
+	private $resource;
+	
+	public function __construct($resource) {
+		$this->resource = $resource;
+	}
+	
+	public function __destructor() {
+		mysql_free_result($this->resource);
+	}
+	
+	public function current (  ) {
+		return mysql_fetch_assoc($this->resource);
+	}
+	
+	public  function key (  ) {
+	}
+	
+	public function next (  ) {
+	}
+	
+	public function rewind (  ) {
+	}
+	
+	public function valid ( ) {
+	}
+}
+
+            ]]></add>
+		</operation>
+		<operation>
+			<search position="replace"><![CDATA[
+            public function query($sql) {
+            ]]></search>
+			<add><![CDATA[
+			public function query($sql, $iterator = false) {
+            ]]></add>
+		</operation>
+		
+		
+		<operation>
+			<search position="before"><![CDATA[
+            $data = array();
+            ]]></search>
+			<add><![CDATA[
+			if ($iterator) {
+					$data = new MySqlRowIterator($resource);
+			} else {
+            ]]></add>
+		</operation>
+		
+		<operation>
+			<search position="after"><![CDATA[
+            mysql_free_result($resource);
+            ]]></search>
+			<add><![CDATA[
+			}
+            ]]></add>
+		</operation>
+	</file>
+</modification>

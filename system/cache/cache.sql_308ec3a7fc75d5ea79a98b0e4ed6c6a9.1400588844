@@ -1,0 +1,6 @@
+O:8:"stdClass":5:{s:3:"row";a:4:{s:11:"category_id";s:2:"60";s:4:"name";s:14:"Мужское";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}s:4:"rows";a:6:{i:0;a:4:{s:11:"category_id";s:2:"60";s:4:"name";s:14:"Мужское";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:1;a:4:{s:11:"category_id";s:2:"61";s:4:"name";s:14:"Женское";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:2;a:4:{s:11:"category_id";s:2:"62";s:4:"name";s:14:"Детское";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:3;a:4:{s:11:"category_id";s:2:"77";s:4:"name";s:18:"Скимборды";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:4;a:4:{s:11:"category_id";s:2:"97";s:4:"name";s:23:"С подогревом";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:5;a:4:{s:11:"category_id";s:2:"73";s:4:"name";s:20:"Аксессуары";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}}s:8:"num_rows";i:6;s:3:"sql";s:394:"SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 0 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)";s:4:"time";i:1400588724;}

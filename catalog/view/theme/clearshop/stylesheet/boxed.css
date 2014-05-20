@@ -1,0 +1,53 @@
+/*  
+Theme Name: Clearshop
+Version: 1.0
+Description: Boxed layout
+*/
+
+
+body {
+	background: #FFF url(../images/patterns/5.png);
+}
+
+#supercontainer {
+	background: #fff;
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 40px;
+	border: 1px solid #eee;
+	border-width: 0 1px;
+}
+
+#thickbar { margin: 0 -40px; }
+
+#footerpre { border: 1px solid #ddd; }
+	#footerpre .container { border: 0; }
+		#footerpre .contact .inner { padding-left: 20px; }
+
+#footerpre, #footer, #footend { background: transparent; }
+
+/* Large screens */
+@media only screen and (min-width:1200px){ 
+	body.responsive-large #supercontainer {
+		width: 1200px;
+	}
+}
+
+/* Smaller than standard 960 */
+@media only screen and (max-width: 979px) {
+
+	body { 
+		background: #fff !important; 
+	}
+
+	#supercontainer {
+		width: auto;
+		padding: 0;
+		border: 0;
+	}
+
+	#thickbar { margin: 0; }
+
+	#pre .contact .inner { padding-left: 0; }
+}
+

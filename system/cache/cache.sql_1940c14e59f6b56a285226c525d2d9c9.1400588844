@@ -1,0 +1,1 @@
+O:8:"stdClass":5:{s:3:"row";a:1:{s:5:"value";s:2:"ru";}s:4:"rows";a:1:{i:0;a:1:{s:5:"value";s:2:"ru";}}s:8:"num_rows";i:1;s:3:"sql";s:64:"SELECT `value` FROM `oc_setting` WHERE `key` = 'config_language'";s:4:"time";i:1400588724;}

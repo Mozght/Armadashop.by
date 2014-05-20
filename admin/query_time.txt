@@ -1,0 +1,226 @@
+--- PAGE URL: route=common/home/chart&token=1ca46e64d291cfb2f930a842c98d161d&range=day ---
+
+[/home/armadash/public_html/admin/index.php]
+Query Time: 0.0012 :: SELECT * FROM oc_setting WHERE store_id = '0'
+Aggregate: 0.0012
+
+[/home/armadash/public_html/admin/index.php]
+Query Time: 0.0036 :: SELECT * FROM `oc_language`
+Aggregate: 0.0048
+
+[/home/armadash/public_html/system/library/currency.php]
+Query Time: 0.0003 :: SELECT * FROM oc_currency
+Aggregate: 0.0051
+
+[/home/armadash/public_html/system/library/weight.php]
+Query Time: 0.0001 :: SELECT * FROM oc_weight_class wc, oc_weight_class_description wcd  WHERE wcd.language_id = '2'AND wc.weight_class_id = wcd.weight_class_id
+Aggregate: 0.0052
+
+[/home/armadash/public_html/system/library/length.php]
+Query Time: 0.0001 :: SELECT * FROM oc_length_class mc,  oc_length_class_description mcd  WHERE mcd.language_id = '2'AND mc.length_class_id = mcd.length_class_id
+Aggregate: 0.0053
+
+[/home/armadash/public_html/system/library/user.php]
+Query Time: 0.0001 :: SELECT * FROM oc_user WHERE user_id = '1' AND status = '1'
+Aggregate: 0.0054
+
+[/home/armadash/public_html/system/library/user.php]
+Query Time: 0.0004 :: UPDATE oc_user SET ip = '46.53.195.143' WHERE user_id = '1'
+Aggregate: 0.0058
+
+[/home/armadash/public_html/system/library/user.php]
+Query Time: 0.0001 :: SELECT permission FROM oc_user_group WHERE user_group_id = '1'
+Aggregate: 0.0059
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0008 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0067
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '0' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.007
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '1') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0073
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '1' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0076
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '2') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.008
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0006 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '2' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0086
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '3') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.009
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '3' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0093
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '4') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0096
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '4' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0099
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0031 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '5') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.013
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0005 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '5' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0135
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '6') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0139
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '6' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0142
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0005 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '7') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0147
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '7' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.015
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0006 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '8') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0156
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '8' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.016
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '9') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0164
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '9' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0168
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '10') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0172
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '10' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0175
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '11') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0179
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '11' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0182
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '12') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0186
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '12' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0189
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '13') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0193
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '13' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0196
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '14') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.02
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '14' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0203
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '15') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0206
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '15' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0209
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '16') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0213
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '16' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0216
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '17') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0219
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '17' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0222
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '18') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0226
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '18' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0229
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '19') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0232
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '19' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0235
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '20') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0239
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '20' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0242
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '21') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0245
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '21' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0248
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '22') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0251
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '22' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0254
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0004 :: SELECT COUNT(*) AS total FROM `oc_order` WHERE order_status_id > '5' AND (DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '23') GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0258
+
+[/home/armadash/public_html/admin/controller/common/home.php]
+Query Time: 0.0003 :: SELECT COUNT(*) AS total FROM oc_customer WHERE DATE(date_added) = DATE(NOW()) AND HOUR(date_added) = '23' GROUP BY HOUR(date_added) ORDER BY date_added ASC
+Aggregate: 0.0261
+

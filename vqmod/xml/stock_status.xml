@@ -1,0 +1,393 @@
+<modification>
+
+	<id>Show stock status on product listings</id>
+	<version>1.0</version>
+	<vqmver>2.1.5</vqmver>
+	<author>Everthemes</author>
+
+	<file name="catalog/controller/product/product.php">
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['points'] = $product_info['points'];
+			]]></search>
+			<add><![CDATA[
+			$this->data['quantity'] = $product_info['quantity'];
+			]]></add>
+		</operation>
+
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/product/product.tpl">
+
+		<operation>
+			<search position="replace"><![CDATA[
+			id="button-cart" class="button"
+			]]></search>
+			<add><![CDATA[
+			id="button-cart" class="button <?php if ($quantity <= 0) { echo 'disabled" disabled="disabled'; } ?>" 
+			]]></add>
+		</operation>
+
+		<operation>
+			<search position="replace"><![CDATA[
+			<?php echo $stock; ?>
+			]]></search>
+			<add><![CDATA[
+			<?php if ($quantity <= 0) { ?>
+			<span class="outstock"><i class="icon-remove"></i> <?php echo $stock; ?></span>
+			<?php } else { ?>
+			<?php $this->language->load('module/clearshop'); ?>
+			<span class="instock"><i class="icon-ok"></i> <?php echo $this->language->get('text_in_stock'); ?> <span class="stockqty">(<?php echo $stock; ?>)</span></span>
+			<?php } ?>
+			]]></add>
+		</operation>
+
+	</file>
+	
+	<file name="catalog/controller/product/quickview.php">
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['points'] = $product_info['points'];
+			]]></search>
+			<add><![CDATA[
+			$this->data['quantity'] = $product_info['quantity'];
+			]]></add>
+		</operation>
+
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/product/quickview.tpl">
+
+		<operation>
+			<search position="replace"><![CDATA[
+			id="button-cart" class="button"
+			]]></search>
+			<add><![CDATA[
+			id="button-cart" class="button <?php if ($quantity <= 0) { echo 'disabled" disabled="disabled'; } ?>" 
+			]]></add>
+		</operation>
+
+		<operation>
+			<search position="replace"><![CDATA[
+			<?php echo $stock; ?>
+			]]></search>
+			<add><![CDATA[
+			<?php if ($quantity <= 0) { ?>
+			<span class="outstock"><i class="icon-remove"></i> <?php echo $stock; ?></span>
+			<?php } else { ?>
+			<?php $this->language->load('module/clearshop'); ?>
+			<span class="instock"><i class="icon-ok"></i> <?php echo $this->language->get('text_in_stock'); ?> <span class="stockqty">(<?php echo $stock; ?>)</span></span>
+			<?php } ?>
+			]]></add>
+		</operation>
+
+	</file>
+
+	
+	<file name="catalog/controller/product/category.php">
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/product/category.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+			]]></search>
+			<add><![CDATA[
+			<?php if ($product['quantity'] <= 0) { ?>
+				<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?> />
+				<span class="outstock"><?php echo $this->language->get('text_out_stock'); ?></span>
+			<?php } else { ?>
+				<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+			<?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/controller/product/search.php">
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			'thumb_soldout' => ($result['quantity'] <= 0)?$this->model_tool_image->resize('sold-out.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height')):null,
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/product/search.tpl">		
+		<operation>
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+			]]></search>
+			<add><![CDATA[
+			<?php if ($product['quantity'] <= 0) { ?>
+				<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?> />
+				<span class="outstock"><?php echo $this->language->get('text_out_stock'); ?></span>
+			<?php } else { ?>
+				<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+			<?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/controller/product/special.php">
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			'thumb_soldout' => ($result['quantity'] <= 0)?$this->model_tool_image->resize('sold-out.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height')):null,
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/product/special.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+			]]></search>
+			<add><![CDATA[
+			<?php if ($product['quantity'] <= 0) { ?>
+				<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?> />
+				<span class="outstock"><?php echo $this->language->get('text_out_stock'); ?></span>
+			<?php } else { ?>
+				<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+			<?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/controller/product/manufacturer.php">
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			'thumb_soldout' => ($result['quantity'] <= 0)?$this->model_tool_image->resize('sold-out.png', $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height')):null,
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/product/manufacturer_info.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+			]]></search>
+			<add><![CDATA[
+			<?php if ($product['quantity'] <= 0) { ?>
+				<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?> />
+				<span class="outstock"><?php echo $this->language->get('text_out_stock'); ?></span>
+			<?php } else { ?>
+				<input type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" />
+			<?php } ?>
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/controller/product/compare.php">
+		<operation>
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][$product_id] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $product_info['quantity'],
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/product/compare.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>"
+			]]></search>
+			<add><![CDATA[
+			<?php if ($product['quantity'] <= 0) { ?>
+			<span class="sold_out"><?php echo $this->language->get('text_out_stock'); ?></span>
+			<?php } ?>
+			<input type="button" value="<?php echo $button_cart; ?>" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?>
+			]]></add>
+		</operation>
+
+	</file>
+	
+	<file name="catalog/controller/module/latest.php">
+		<operation error="skip">
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			'thumb_soldout' => ($result['quantity'] <= 0)?$this->model_tool_image->resize('sold-out.png', $setting['image_width'], $setting['image_height']):null,
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/module/latest.tpl">
+		<operation error="skip">
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>"
+			]]></search>
+			<add><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?>
+			]]></add>
+		</operation>
+
+	</file>
+	
+	<file name="catalog/controller/module/special.php">
+		<operation error="skip">
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			'thumb_soldout' => ($result['quantity'] <= 0)?$this->model_tool_image->resize('sold-out.png', $setting['image_width'], $setting['image_height']):null,
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/module/special.tpl">
+		<operation error="skip">
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>"
+			]]></search>
+			<add><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?>
+			]]></add>
+		</operation>
+
+	</file>
+	
+	<file name="catalog/controller/module/featured.php">
+		<operation error="skip">
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $product_info['quantity'],
+			'thumb_soldout' => ($product_info['quantity'] <= 0)?$this->model_tool_image->resize('sold-out.png', $setting['image_width'], $setting['image_height']):null,
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/module/featured.tpl">
+		<operation error="skip">
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>"
+			]]></search>
+			<add><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?>
+			]]></add>
+		</operation>
+
+	</file>
+	
+	<file name="catalog/controller/module/bestseller.php">
+		<operation error="skip">
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			'thumb_soldout' => ($result['quantity'] <= 0)?$this->model_tool_image->resize('sold-out.png', $setting['image_width'], $setting['image_height']):null,
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/module/bestseller.tpl">
+		<operation error="skip">
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>"
+			]]></search>
+			<add><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?>
+			]]></add>
+		</operation>
+
+	</file>
+
+	<file name="catalog/controller/module/related.php">
+		<operation error="skip">
+			<search position="after" index="1"><![CDATA[
+			$this->data['products'][] = array(
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			'thumb_soldout' => ($result['quantity'] <= 0)?$this->model_tool_image->resize('sold-out.png', $setting['image_width'], $setting['image_height']):null,
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/module/related.tpl">
+		<operation error="skip">
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>"
+			]]></search>
+			<add><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?>
+			]]></add>
+		</operation>
+
+	</file>
+
+	<file name="catalog/controller/module/tabbed_products.php">
+		<operation error="skip">
+			<search position="before"><![CDATA[
+			'product_id' => $result['product_id'],
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $result['quantity'],
+			'thumb_soldout' => ($result['quantity'] <= 0)?$this->model_tool_image->resize('sold-out.png', $setting['image_width'], $setting['image_height']):null,
+			]]></add>
+		</operation>
+		<operation error="skip">
+			<search position="before"><![CDATA[
+			'product_id' => $product_info['product_id'],
+			]]></search>
+			<add><![CDATA[
+			'quantity' => $product_info['quantity'],
+			'thumb_soldout' => ($product_info['quantity'] <= 0)?$this->model_tool_image->resize('sold-out.png', $setting['image_width'], $setting['image_height']):null,
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/module/tabbed_products.tpl">
+		<operation error="skip">
+			<search position="replace"><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>"
+			]]></search>
+			<add><![CDATA[
+			<input type="button" value="<?php echo $button_cart; ?>" <?php if ($product['quantity'] <= 0) { echo 'style="display:none"'; } ?>
+			]]></add>
+		</operation>
+
+	</file>
+	
+</modification>

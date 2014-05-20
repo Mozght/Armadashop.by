@@ -1,0 +1,24 @@
+---------- Date: 2013-10-29 10:14:43 ~ IP : 46.53.195.71 ----------
+REQUEST URI : /admin/
+MOD DETAILS:
+   modFile   : /home/armadash/public_html/vqmod/xml/stock_status.xml
+   id        : Show stock status on product listings
+   version   : 1.0
+   vqmver    : 2.1.5
+   author    : Everthemes
+VQModObject::parseMods - Could not resolve path for [catalog/controller/module/latest.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2013-10-29 16:39:23 ~ IP : 46.53.195.71 ----------
+REQUEST URI : /admin/index.php?route=catalog/product&amp;token=5d63c64907f2a3e920d5863bdba5266c&amp;filter_name=pyxi
+MOD DETAILS:
+   modFile   : /home/armadash/public_html/vqmod/xml/stock_status.xml
+   id        : Show stock status on product listings
+   version   : 1.0
+   vqmver    : 2.1.5
+   author    : Everthemes
+VQModObject::parseMods - Could not resolve path for [catalog/controller/module/latest.php] (SKIPPED)
+----------------------------------------------------------------------
+
+

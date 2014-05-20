@@ -1,0 +1,6 @@
+O:8:"stdClass":5:{s:3:"row";a:4:{s:11:"category_id";s:2:"76";s:4:"name";s:28:"Брелоки, значки";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}s:4:"rows";a:3:{i:0;a:4:{s:11:"category_id";s:2:"76";s:4:"name";s:28:"Брелоки, значки";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:1;a:4:{s:11:"category_id";s:2:"75";s:4:"name";s:18:"Полотенца";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:2;a:4:{s:11:"category_id";s:2:"74";s:4:"name";s:16:"Шлепанцы";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}}s:8:"num_rows";i:3;s:3:"sql";s:395:"SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 73 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)";s:4:"time";i:1400588725;}

@@ -1,0 +1,6 @@
+O:8:"stdClass":5:{s:3:"row";a:4:{s:11:"category_id";s:2:"98";s:4:"name";s:38:"Жилетки с подогревом";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}s:4:"rows";a:6:{i:0;a:4:{s:11:"category_id";s:2:"98";s:4:"name";s:38:"Жилетки с подогревом";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:1;a:4:{s:11:"category_id";s:2:"99";s:4:"name";s:38:"Стельки с подогревом";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:2;a:4:{s:11:"category_id";s:3:"100";s:4:"name";s:44:"Сушилки для обуви/ экипа";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:3;a:4:{s:11:"category_id";s:3:"102";s:4:"name";s:44:"Аксессуары с подогревом";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:4;a:4:{s:11:"category_id";s:3:"103";s:4:"name";s:23:"Для животных";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}i:5;a:4:{s:11:"category_id";s:3:"101";s:4:"name";s:26:"Шипы для обуви";s:6:"column";s:1:"1";s:3:"top";s:1:"1";}}s:8:"num_rows";i:6;s:3:"sql";s:395:"SELECT cd.category_id, cd.name, c.column, c.top
+                FROM oc_category c, oc_category_description cd, oc_category_to_store c2s
+                WHERE  c.category_id = cd.category_id AND c.category_id = c2s.category_id AND c.parent_id = 97 AND cd.language_id = 2 
+                AND c2s.store_id = 0
+                AND c.status = 1
+                ORDER BY c.sort_order, LCASE(cd.name)";s:4:"time";i:1400588724;}

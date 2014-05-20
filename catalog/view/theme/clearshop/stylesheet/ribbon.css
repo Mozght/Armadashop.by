@@ -1,0 +1,88 @@
+/*  
+Theme Name: Ribbon
+Version: 1.0
+Description: Main content with a gray ribbon
+*/
+
+#maintop-container {
+	background: #fafafa;
+	border: 1px solid #ddd;
+	border-width: 0 0 1px;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover, .navbar .nav>.active>a:focus {
+	background: #666;
+	color: #fff;
+}
+.payment .right .button,
+.cart .button,
+.button-cart {
+	background: #d00000;
+	border:1px solid #ff0000;
+}
+.payment .right .button:hover,
+.payment .right .button:active,
+.cart .button:hover,
+.cart .button:active,
+.button-cart:hover,
+.button-cart:active {
+	background: #ff0000;
+}
+.product-info .image,
+.product-info .image-additional a,
+.checkout_steps.active,
+.grid-box:hover .inner,
+.sidebar .box,
+.box.category-accordion,
+.box.account,
+.box.affiliate,
+.box.mod-information,
+.grid-box .inner2 .image,
+.product-slider ul li .image,
+.product-row:hover,
+#cart-info .table,
+.mainborder textarea, .mainborder input[type="text"], .mainborder input[type="password"], .mainborder input[type="datetime"], .mainborder input[type="date"], .mainborder input[type="time"], .mainborder input[type="number"], .mainborder input[type="email"], .mainborder input[type="url"], .mainborder input[type="search"], .mainborder input[type="tel"]
+{
+	background: #fff;
+}
+.grid-box .image {
+	border: 1px solid #ddd;
+}
+.grid-box .name, .grid-box:hover .image {
+	border-color: transparent;
+}
+.grid-box:hover .name {
+	border-top-color: #ddd;
+}
+.box.category-accordion, .box.account, .box.mod-information, .box.affiliate {
+	border-color: #ddd;
+}
+.checkout textarea, .checkout input[type="text"], .checkout input[type="email"], .checkout input[type="password"] {
+	background: #fbfbfb;
+}
+#cart-info tfoot, #cart-info thead,
+.product-info .cart {
+	background: #f4f4f4;
+}
+#cart-info .totals {
+	color: #333;
+}
+.page_product #maintop-container > .container {
+	background: transparent;
+	padding: 0;
+}
+#footerpre {
+	border-top:0;
+}
+#footerpre, #footer, #footend {
+	background: #fff;
+}
+
+/* Smaller than standard 960 */
+@media only screen and (max-width: 979px) {
+
+	#outernav, #header, .navbar { border-bottom: 0; }
+
+	#maintop-container {
+		border-width: 1px 0;
+	}
+}

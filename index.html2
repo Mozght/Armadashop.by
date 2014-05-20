@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>АРМАДА  - инновации в области активного отдыха</title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+<style>
+	a {color:#1B7EE0}
+	body {font-family:'Open Sans', sans-serif; font-weight:100;padding-top:184px;}
+	.container {width:600px; margin:0 auto;}
+	body p {text-align:left;}
+	.logo {position:fixed;top:0;}
+	b {font-weight:400;}
+	h1 {font-size:24px; font-weight:500;}
+}
+</style>
+</head>
+
+<body>
+	<div class="container">
+		<img src="http://armadashop.by/image/data/armada-184.png"  class="logo"/>
+    
+    	<h1>МЫ !</h1>
+    	<p>
+    	В настоящее время сайт находится на стадии заполнения. Мы постараемся как можно скорее это исправить, а пока несколько слов о нас.</p>
+       <p> <b>Мы - АРМАДА </b>- "большое соединение согласованно действующих..." ярких, энергичных и спортивных людей, расширяем границы активного образа жизни в Беларуси !  
+        </p>
+      
+      <h1>О Horsefeathers</h1>
+      <p>Компания <b>Horsefeathers</b> сейчас широкоизвестна среди европейских бордрайдеров. В Чехии – стране локализации экстремального бренда – насчитывается около 70 магазинов! И практически в каждом бордшопе Германии, Австрии, Франции, Италии и остальной «катающейся» Европе вы встретите этот качественный и доступный бренд. </p>
+    <p>Сейчас компания ориентирована на поддержку нескольких направлений экстремального спорта – сноуборд, скейт, мотокросс, мотофристайл, серфинг. А начиналось все в Канаде в 1989 году с создания эксклюзивных футболок и толстовок, в то время как сноуборд и скейт только начинал обретать популярность в Канаде, однако не принимались широкой публикой, как не принимались идеи, музыка и дизайн мешковатой, свободной и яркой одежды молодых студентов-основателей. </p>
+    <p>Вероятно это и спровоцировало название бренда HORSEFEATHERS, что в переводе означает «ерунда, нонсенс» или просто вежливый перевод «невежливого Bull$#it». ДАВАЙТЕ ЛОМАТЬ СТЕРЕОТИПЫ ! Это стала не просто одежда, это стало заявлением!</p>
+    <p>Horsefeathers один из немногих производителей одежды кто отшивает значительную часть коллекции в европейских странах. Именно это обстоятельство стало основной гарантией высокого качества. И это то, о чем гордо можно заявлять. </p>
+    <p>Собственное производство, вовлеченность топ-менеджмента в жизнь райдеров (сам топ-менеджмент райдеры до мозга костей) позволяет команде профессионалов-дизайнеров оперативно вводить новые модели в производство, следуя всем тенденциям экстремальной моды. </p>
+    <p>Мы – команда АРМАДА – являемся официальными представителями Horsefeathers в Беларуси и мы начинаем ломать стереотип, что отменное качество, стиль и надежность для райдеров недоступны – доступны и они уже в Минске!</p>
+    <p>Листайте каталог, выбирайте с удовольствием! Пишите, звоните, оденем и порадуем!</p>
+    
+   <p><b>Каталог</b></p>
+   <div data-configid="0/5119035" style="width: 600px; height: 600px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+      
+        <hr />
+        <h1>Freak Summer Party</h1>
+        <p>3 августа 2013 на арт-пикнике <a href="http://fundivers.org">FSP</a> впервые в Беларуси мы развернули бассеин площадью 200 кв.м. для катания на <a href="http://ru.wikipedia.org/wiki/%D0%A1%D0%BA%D0%B8%D0%BC%D0%B1%D0%BE%D1%80%D0%B4">скимборде</a>. Как это было Вы можете увидеть на нашей странице в <a href="https://www.facebook.com/armadashop.by" class="">FACEBOOK</a> и <a href="http://vk.com/armadaxtreme" class="">ВКОНТАКТЕ</a></p>
+        <br />
+        <br />
+        <iframe width="600" height="338" src="//www.youtube.com/embed/d5HiVbc8DhA?rel=0" frameborder="0" allowfullscreen></iframe>
+        
+    </div>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42954890-1', 'armadashop.by');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

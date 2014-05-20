@@ -1,0 +1,108 @@
+<modification>
+	<id>Quick View</id>
+	<version>1.0</version>
+	<vqmver>2.1.6</vqmver>
+	<author>Everthemes</author>
+
+	 <file name="catalog/view/theme/*/template/common/header.tpl">
+		 <operation>
+			<search position="before"><![CDATA[
+				<?php foreach ($scripts as $script) { ?>
+			]]></search>
+			<add><![CDATA[
+				<script type="text/javascript" src="catalog/view/theme/clearshop/js/quickview.js"></script>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/product/category.tpl">
+		<operation>
+			<search position="before" error="log"><![CDATA[<div class="name">]]></search>
+			<add><![CDATA[
+				<div class="quickview" style="visibility:hidden;"><a id="qv<?php echo $product['product_id']; ?>" class="button" href="<?php echo $product['href']; ?>" onClick="ajaxDialog('index.php?route=product/quickview&amp;product_id=<?php echo $product['product_id']; ?>','quickview'); return false;"><?php echo $this->language->get('text_quickview'); ?> <i class="icon-share-alt"></i></a></div>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/product/special.tpl">
+		<operation>
+			<search position="before" error="log"><![CDATA[<div class="name">]]></search>
+			<add><![CDATA[
+				<div class="quickview" style="visibility:hidden;"><a id="qv<?php echo $product['product_id']; ?>" class="button" href="<?php echo $product['href']; ?>" onClick="ajaxDialog('index.php?route=product/quickview&amp;product_id=<?php echo $product['product_id']; ?>','quickview'); return false;"><?php echo $this->language->get('text_quickview'); ?> <i class="icon-share-alt"></i></a></div>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/product/manufacturer_info.tpl">
+		<operation>
+			<search position="before" error="log"><![CDATA[<div class="name">]]></search>
+			<add><![CDATA[
+				<div class="quickview" style="visibility:hidden;"><a id="qv<?php echo $product['product_id']; ?>" class="button" href="<?php echo $product['href']; ?>" onClick="ajaxDialog('index.php?route=product/quickview&amp;product_id=<?php echo $product['product_id']; ?>','quickview'); return false;"><?php echo $this->language->get('text_quickview'); ?> <i class="icon-share-alt"></i></a></div>
+			]]></add>
+		</operation>
+	</file>
+
+	 <file name="catalog/view/theme/*/template/product/search.tpl">
+	   <operation>
+			<search position="before" error="log"><![CDATA[<div class="name">]]></search>
+			<add><![CDATA[
+				<div class="quickview" style="visibility:hidden;"><a id="qv<?php echo $product['product_id']; ?>" class="button" href="<?php echo $product['href']; ?>" onClick="ajaxDialog('index.php?route=product/quickview&amp;product_id=<?php echo $product['product_id']; ?>','quickview'); return false;"><?php echo $this->language->get('text_quickview'); ?> <i class="icon-share-alt"></i></a></div>
+			]]></add>
+		</operation>
+	</file>
+
+	 <file name="catalog/view/theme/*/template/module/featured.tpl">
+		<operation>
+			<search position="before" error="log"><![CDATA[<div class="name">]]></search>
+			<add><![CDATA[
+				<div class="quickview" style="visibility:hidden;"><a id="qv<?php echo $product['product_id']; ?>" class="button" href="<?php echo $product['href']; ?>" onClick="ajaxDialog('index.php?route=product/quickview&amp;product_id=<?php echo $product['product_id']; ?>','quickview'); return false;"><?php echo $this->language->get('text_quickview'); ?> <i class="icon-share-alt"></i></a></div>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/module/latest.tpl">
+		<operation>
+			<search position="before" error="log"><![CDATA[<div class="name">]]></search>
+			<add><![CDATA[
+				<div class="quickview" style="visibility:hidden;"><a id="qv<?php echo $product['product_id']; ?>" class="button" href="<?php echo $product['href']; ?>" onClick="ajaxDialog('index.php?route=product/quickview&amp;product_id=<?php echo $product['product_id']; ?>','quickview'); return false;"><?php echo $this->language->get('text_quickview'); ?> <i class="icon-share-alt"></i></a></div>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/module/special.tpl">
+		<operation>
+			<search position="before" error="log"><![CDATA[<div class="name">]]></search>
+			<add><![CDATA[
+				<div class="quickview" style="visibility:hidden;"><a id="qv<?php echo $product['product_id']; ?>" class="button" href="<?php echo $product['href']; ?>" onClick="ajaxDialog('index.php?route=product/quickview&amp;product_id=<?php echo $product['product_id']; ?>','quickview'); return false;"><?php echo $this->language->get('text_quickview'); ?> <i class="icon-share-alt"></i></a></div>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/module/bestseller.tpl">
+		<operation>
+			<search position="before" error="log"><![CDATA[<div class="name">]]></search>
+			<add><![CDATA[
+				<div class="quickview" style="visibility:hidden;"><a id="qv<?php echo $product['product_id']; ?>" class="button" href="<?php echo $product['href']; ?>" onClick="ajaxDialog('index.php?route=product/quickview&amp;product_id=<?php echo $product['product_id']; ?>','quickview'); return false;"><?php echo $this->language->get('text_quickview'); ?> <i class="icon-share-alt"></i></a></div>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/module/tabbed_products.tpl">
+		<operation>
+			 <search position="before" error="log"><![CDATA[<div class="name">]]></search>
+			<add><![CDATA[
+				<div class="quickview" style="visibility:hidden;"><a id="qv<?php echo $product['product_id']; ?>" class="button" href="<?php echo $product['href']; ?>" onClick="ajaxDialog('index.php?route=product/quickview&amp;product_id=<?php echo $product['product_id']; ?>','quickview'); return false;"><?php echo $this->language->get('text_quickview'); ?> <i class="icon-share-alt"></i></a></div>
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/module/related.tpl">
+		<operation>
+			<search position="before" error="log"><![CDATA[<div class="name">]]></search>
+			<add><![CDATA[
+				<div class="quickview" style="visibility:hidden;"><a id="qv<?php echo $product['product_id']; ?>" class="button" href="<?php echo $product['href']; ?>" onClick="ajaxDialog('index.php?route=product/quickview&amp;product_id=<?php echo $product['product_id']; ?>','quickview'); return false;"><?php echo $this->language->get('text_quickview'); ?> <i class="icon-share-alt"></i></a></div>
+			]]></add>
+		</operation>
+	</file>
+
+</modification>

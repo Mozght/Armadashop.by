@@ -1,0 +1,460 @@
+O:8:"stdClass":5:{s:3:"row";a:6:{s:10:"setting_id";s:1:"1";s:8:"store_id";s:1:"0";s:5:"group";s:8:"shipping";s:3:"key";s:19:"shipping_sort_order";s:5:"value";s:1:"3";s:10:"serialized";s:1:"0";}s:4:"rows";a:279:{i:0;a:6:{s:10:"setting_id";s:1:"1";s:8:"store_id";s:1:"0";s:5:"group";s:8:"shipping";s:3:"key";s:19:"shipping_sort_order";s:5:"value";s:1:"3";s:10:"serialized";s:1:"0";}i:1;a:6:{s:10:"setting_id";s:1:"2";s:8:"store_id";s:1:"0";s:5:"group";s:9:"sub_total";s:3:"key";s:20:"sub_total_sort_order";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:2;a:6:{s:10:"setting_id";s:1:"3";s:8:"store_id";s:1:"0";s:5:"group";s:9:"sub_total";s:3:"key";s:16:"sub_total_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:3;a:6:{s:10:"setting_id";s:1:"4";s:8:"store_id";s:1:"0";s:5:"group";s:3:"tax";s:3:"key";s:10:"tax_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:4;a:6:{s:10:"setting_id";s:1:"5";s:8:"store_id";s:1:"0";s:5:"group";s:5:"total";s:3:"key";s:16:"total_sort_order";s:5:"value";s:1:"9";s:10:"serialized";s:1:"0";}i:5;a:6:{s:10:"setting_id";s:1:"6";s:8:"store_id";s:1:"0";s:5:"group";s:5:"total";s:3:"key";s:12:"total_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:6;a:6:{s:10:"setting_id";s:1:"7";s:8:"store_id";s:1:"0";s:5:"group";s:3:"tax";s:3:"key";s:14:"tax_sort_order";s:5:"value";s:1:"5";s:10:"serialized";s:1:"0";}i:7;a:6:{s:10:"setting_id";s:1:"8";s:8:"store_id";s:1:"0";s:5:"group";s:13:"free_checkout";s:3:"key";s:24:"free_checkout_sort_order";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:8;a:6:{s:10:"setting_id";s:1:"9";s:8:"store_id";s:1:"0";s:5:"group";s:3:"cod";s:3:"key";s:14:"cod_sort_order";s:5:"value";s:1:"5";s:10:"serialized";s:1:"0";}i:9;a:6:{s:10:"setting_id";s:2:"10";s:8:"store_id";s:1:"0";s:5:"group";s:3:"cod";s:3:"key";s:9:"cod_total";s:5:"value";s:4:"0.01";s:10:"serialized";s:1:"0";}i:10;a:6:{s:10:"setting_id";s:2:"11";s:8:"store_id";s:1:"0";s:5:"group";s:3:"cod";s:3:"key";s:19:"cod_order_status_id";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:11;a:6:{s:10:"setting_id";s:2:"12";s:8:"store_id";s:1:"0";s:5:"group";s:3:"cod";s:3:"key";s:15:"cod_geo_zone_id";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:12;a:6:{s:10:"setting_id";s:2:"13";s:8:"store_id";s:1:"0";s:5:"group";s:3:"cod";s:3:"key";s:10:"cod_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:13;a:6:{s:10:"setting_id";s:2:"14";s:8:"store_id";s:1:"0";s:5:"group";s:8:"shipping";s:3:"key";s:15:"shipping_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:14;a:6:{s:10:"setting_id";s:2:"15";s:8:"store_id";s:1:"0";s:5:"group";s:8:"shipping";s:3:"key";s:18:"shipping_estimator";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:15;a:6:{s:10:"setting_id";s:2:"27";s:8:"store_id";s:1:"0";s:5:"group";s:6:"coupon";s:3:"key";s:17:"coupon_sort_order";s:5:"value";s:1:"4";s:10:"serialized";s:1:"0";}i:16;a:6:{s:10:"setting_id";s:2:"28";s:8:"store_id";s:1:"0";s:5:"group";s:6:"coupon";s:3:"key";s:13:"coupon_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:17;a:6:{s:10:"setting_id";s:2:"34";s:8:"store_id";s:1:"0";s:5:"group";s:4:"flat";s:3:"key";s:15:"flat_sort_order";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:18;a:6:{s:10:"setting_id";s:2:"35";s:8:"store_id";s:1:"0";s:5:"group";s:4:"flat";s:3:"key";s:11:"flat_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:19;a:6:{s:10:"setting_id";s:2:"36";s:8:"store_id";s:1:"0";s:5:"group";s:4:"flat";s:3:"key";s:16:"flat_geo_zone_id";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:20;a:6:{s:10:"setting_id";s:2:"37";s:8:"store_id";s:1:"0";s:5:"group";s:4:"flat";s:3:"key";s:17:"flat_tax_class_id";s:5:"value";s:1:"9";s:10:"serialized";s:1:"0";}i:21;a:6:{s:10:"setting_id";s:2:"41";s:8:"store_id";s:1:"0";s:5:"group";s:4:"flat";s:3:"key";s:9:"flat_cost";s:5:"value";s:4:"5.00";s:10:"serialized";s:1:"0";}i:22;a:6:{s:10:"setting_id";s:2:"42";s:8:"store_id";s:1:"0";s:5:"group";s:6:"credit";s:3:"key";s:17:"credit_sort_order";s:5:"value";s:1:"7";s:10:"serialized";s:1:"0";}i:23;a:6:{s:10:"setting_id";s:2:"43";s:8:"store_id";s:1:"0";s:5:"group";s:6:"credit";s:3:"key";s:13:"credit_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:24;a:6:{s:10:"setting_id";s:5:"15078";s:8:"store_id";s:1:"0";s:5:"group";s:15:"tabbed_products";s:3:"key";s:22:"tabbed_products_module";s:5:"value";s:320:"a:1:{i:0;a:11:{s:6:"latest";s:8:"carousel";s:8:"featured";s:8:"carousel";s:10:"bestseller";s:8:"disabled";s:7:"special";s:8:"disabled";s:5:"limit";s:2:"12";s:11:"image_width";s:2:"90";s:12:"image_height";s:2:"90";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}";s:10:"serialized";s:1:"1";}i:25;a:6:{s:10:"setting_id";s:2:"53";s:8:"store_id";s:1:"0";s:5:"group";s:6:"reward";s:3:"key";s:17:"reward_sort_order";s:5:"value";s:1:"2";s:10:"serialized";s:1:"0";}i:26;a:6:{s:10:"setting_id";s:2:"54";s:8:"store_id";s:1:"0";s:5:"group";s:6:"reward";s:3:"key";s:13:"reward_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:27;a:6:{s:10:"setting_id";s:2:"94";s:8:"store_id";s:1:"0";s:5:"group";s:7:"voucher";s:3:"key";s:18:"voucher_sort_order";s:5:"value";s:1:"8";s:10:"serialized";s:1:"0";}i:28;a:6:{s:10:"setting_id";s:2:"95";s:8:"store_id";s:1:"0";s:5:"group";s:7:"voucher";s:3:"key";s:14:"voucher_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:29;a:6:{s:10:"setting_id";s:3:"103";s:8:"store_id";s:1:"0";s:5:"group";s:13:"free_checkout";s:3:"key";s:20:"free_checkout_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:30;a:6:{s:10:"setting_id";s:3:"104";s:8:"store_id";s:1:"0";s:5:"group";s:13:"free_checkout";s:3:"key";s:29:"free_checkout_order_status_id";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:31;a:6:{s:10:"setting_id";s:4:"2638";s:8:"store_id";s:1:"0";s:5:"group";s:8:"category";s:3:"key";s:25:"category_accordion_module";s:5:"value";s:121:"a:1:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}";s:10:"serialized";s:1:"1";}i:32;a:6:{s:10:"setting_id";s:4:"6345";s:8:"store_id";s:1:"0";s:5:"group";s:12:"manufacturer";s:3:"key";s:19:"manufacturer_module";s:5:"value";s:121:"a:1:{i:0;a:4:{s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";}}";s:10:"serialized";s:1:"1";}i:33;a:6:{s:10:"setting_id";s:3:"761";s:8:"store_id";s:1:"0";s:5:"group";s:10:"bestseller";s:3:"key";s:17:"bestseller_module";s:5:"value";s:199:"a:1:{i:0;a:7:{s:5:"limit";s:1:"5";s:11:"image_width";s:3:"160";s:12:"image_height";s:3:"160";s:9:"layout_id";s:1:"4";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:0:"";}}";s:10:"serialized";s:1:"1";}i:34;a:6:{s:10:"setting_id";s:4:"1417";s:8:"store_id";s:1:"0";s:5:"group";s:6:"latest";s:3:"key";s:13:"latest_module";s:5:"value";s:200:"a:1:{i:0;a:7:{s:5:"limit";s:1:"5";s:11:"image_width";s:3:"160";s:12:"image_height";s:3:"160";s:9:"layout_id";s:1:"4";s:8:"position";s:12:"column_right";s:6:"status";s:1:"1";s:10:"sort_order";s:0:"";}}";s:10:"serialized";s:1:"1";}i:35;a:6:{s:10:"setting_id";s:4:"3603";s:8:"store_id";s:1:"0";s:5:"group";s:11:"google_base";s:3:"key";s:18:"google_base_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:36;a:6:{s:10:"setting_id";s:4:"3602";s:8:"store_id";s:1:"0";s:5:"group";s:14:"google_sitemap";s:3:"key";s:21:"google_sitemap_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:37;a:6:{s:10:"setting_id";s:4:"1419";s:8:"store_id";s:1:"0";s:5:"group";s:5:"store";s:3:"key";s:11:"store_admin";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:38;a:6:{s:10:"setting_id";s:4:"1420";s:8:"store_id";s:1:"0";s:5:"group";s:5:"store";s:3:"key";s:12:"store_module";s:5:"value";s:120:"a:1:{i:0;a:4:{s:9:"layout_id";s:1:"4";s:8:"position";s:11:"content_top";s:6:"status";s:1:"1";s:10:"sort_order";s:0:"";}}";s:10:"serialized";s:1:"1";}i:39;a:6:{s:10:"setting_id";s:4:"6324";s:8:"store_id";s:1:"0";s:5:"group";s:11:"priceslider";s:3:"key";s:18:"priceslider_module";s:5:"value";s:175:"a:1:{i:1;a:6:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"4";s:10:"lowerlimit";s:1:"0";s:10:"upperlimit";s:3:"300";}}";s:10:"serialized";s:1:"1";}i:40;a:6:{s:10:"setting_id";s:4:"6352";s:8:"store_id";s:1:"0";s:5:"group";s:7:"related";s:3:"key";s:14:"related_module";s:5:"value";s:202:"a:1:{i:0;a:7:{s:5:"limit";s:2:"20";s:11:"image_width";s:2:"80";s:12:"image_height";s:2:"80";s:9:"layout_id";s:1:"2";s:8:"position";s:14:"content_bottom";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"1";}}";s:10:"serialized";s:1:"1";}i:41;a:6:{s:10:"setting_id";s:4:"6325";s:8:"store_id";s:1:"0";s:5:"group";s:6:"filter";s:3:"key";s:13:"filter_module";s:5:"value";s:121:"a:1:{i:0;a:4:{s:9:"layout_id";s:1:"3";s:8:"position";s:11:"column_left";s:6:"status";s:1:"1";s:10:"sort_order";s:1:"3";}}";s:10:"serialized";s:1:"1";}i:42;a:6:{s:10:"setting_id";s:5:"15401";s:8:"store_id";s:1:"0";s:5:"group";s:8:"featured";s:3:"key";s:7:"product";s:5:"value";s:10:"скимб";s:10:"serialized";s:1:"0";}i:43;a:6:{s:10:"setting_id";s:5:"15402";s:8:"store_id";s:1:"0";s:5:"group";s:8:"featured";s:3:"key";s:16:"featured_product";s:5:"value";s:40:"74,72,75,98,162,56,197,53,158,90,105,101";s:10:"serialized";s:1:"0";}i:44;a:6:{s:10:"setting_id";s:5:"15403";s:8:"store_id";s:1:"0";s:5:"group";s:8:"featured";s:3:"key";s:15:"featured_module";s:5:"value";s:199:"a:1:{i:0;a:7:{s:5:"limit";s:2:"12";s:11:"image_width";s:2:"80";s:12:"image_height";s:2:"80";s:9:"layout_id";s:1:"1";s:8:"position";s:11:"content_top";s:6:"status";s:1:"0";s:10:"sort_order";s:1:"1";}}";s:10:"serialized";s:1:"1";}i:45;a:6:{s:10:"setting_id";s:5:"15292";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:12:"config_title";s:5:"value";s:125:"ARMADA - интернет-магазин товаров для экстимального и активного отдыха.";s:10:"serialized";s:1:"0";}i:46;a:6:{s:10:"setting_id";s:5:"15381";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:14:"config_seo_url";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:47;a:6:{s:10:"setting_id";s:5:"15382";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:29:"config_file_extension_allowed";s:5:"value";s:148:"txt
+png
+jpe
+jpeg
+jpg
+gif
+bmp
+ico
+tiff
+tif
+svg
+svgz
+zip
+rar
+msi
+cab
+mp3
+qt
+mov
+pdf
+psd
+ai
+eps
+ps
+doc
+rtf
+xls
+ppt
+odt
+ods";s:10:"serialized";s:1:"0";}i:48;a:6:{s:10:"setting_id";s:5:"15383";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:24:"config_file_mime_allowed";s:5:"value";s:612:"text/plain
+image/png
+image/jpeg
+image/jpeg
+image/jpeg
+image/gif
+image/bmp
+image/vnd.microsoft.icon
+image/tiff
+image/tiff
+image/svg+xml
+image/svg+xml
+application/zip
+application/x-rar-compressed
+application/x-msdownload
+application/vnd.ms-cab-compressed
+audio/mpeg
+video/quicktime
+video/quicktime
+application/pdf
+image/vnd.adobe.photoshop
+application/postscript
+application/postscript
+application/postscript
+application/msword
+application/rtf
+application/vnd.ms-excel
+application/vnd.ms-powerpoint
+application/vnd.oasis.opendocument.text
+application/vnd.oasis.opendocument.spreadsheet";s:10:"serialized";s:1:"0";}i:49;a:6:{s:10:"setting_id";s:5:"15384";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:19:"config_seo_url_type";s:5:"value";s:7:"seo_pro";s:10:"serialized";s:1:"0";}i:50;a:6:{s:10:"setting_id";s:5:"15385";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:27:"config_seo_url_include_path";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:51;a:6:{s:10:"setting_id";s:5:"15386";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:22:"config_seo_url_postfix";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:52;a:6:{s:10:"setting_id";s:5:"15387";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:18:"config_maintenance";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:53;a:6:{s:10:"setting_id";s:5:"15388";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:15:"config_password";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:54;a:6:{s:10:"setting_id";s:5:"15389";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:17:"config_encryption";s:5:"value";s:32:"909052a3bceb220f34737eceea8b505b";s:10:"serialized";s:1:"0";}i:55;a:6:{s:10:"setting_id";s:5:"15390";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:18:"config_compression";s:5:"value";s:1:"9";s:10:"serialized";s:1:"0";}i:56;a:6:{s:10:"setting_id";s:5:"15391";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:20:"config_error_display";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:57;a:6:{s:10:"setting_id";s:5:"15392";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:16:"config_error_log";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:58;a:6:{s:10:"setting_id";s:5:"15393";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:21:"config_error_filename";s:5:"value";s:9:"error.txt";s:10:"serialized";s:1:"0";}i:59;a:6:{s:10:"setting_id";s:5:"15394";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:23:"config_google_analytics";s:5:"value";s:439:" &lt;script&gt;
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42954890-1', 'armadashop.by');
+  ga('send', 'pageview');
+
+&lt;/script&gt;";s:10:"serialized";s:1:"0";}i:60;a:6:{s:10:"setting_id";s:5:"15295";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:16:"config_layout_id";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:61;a:6:{s:10:"setting_id";s:5:"15296";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:17:"config_country_id";s:5:"value";s:2:"20";s:10:"serialized";s:1:"0";}i:62;a:6:{s:10:"setting_id";s:5:"15297";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:14:"config_zone_id";s:5:"value";s:3:"339";s:10:"serialized";s:1:"0";}i:63;a:6:{s:10:"setting_id";s:5:"15298";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:15:"config_language";s:5:"value";s:2:"ru";s:10:"serialized";s:1:"0";}i:64;a:6:{s:10:"setting_id";s:5:"15299";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:21:"config_admin_language";s:5:"value";s:2:"ru";s:10:"serialized";s:1:"0";}i:65;a:6:{s:10:"setting_id";s:5:"15300";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:15:"config_currency";s:5:"value";s:3:"BYR";s:10:"serialized";s:1:"0";}i:66;a:6:{s:10:"setting_id";s:5:"15301";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:20:"config_currency_auto";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:67;a:6:{s:10:"setting_id";s:5:"15302";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:22:"config_length_class_id";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:68;a:6:{s:10:"setting_id";s:5:"15303";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:22:"config_weight_class_id";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:69;a:6:{s:10:"setting_id";s:5:"15304";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:20:"config_catalog_limit";s:5:"value";s:2:"25";s:10:"serialized";s:1:"0";}i:70;a:6:{s:10:"setting_id";s:5:"15305";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:18:"config_admin_limit";s:5:"value";s:2:"50";s:10:"serialized";s:1:"0";}i:71;a:6:{s:10:"setting_id";s:5:"15306";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:20:"config_product_count";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:72;a:6:{s:10:"setting_id";s:5:"15307";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:20:"config_review_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:73;a:6:{s:10:"setting_id";s:5:"15308";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:15:"config_download";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:74;a:6:{s:10:"setting_id";s:5:"15309";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:18:"config_voucher_min";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:75;a:6:{s:10:"setting_id";s:5:"15310";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:18:"config_voucher_max";s:5:"value";s:4:"1000";s:10:"serialized";s:1:"0";}i:76;a:6:{s:10:"setting_id";s:5:"15311";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:10:"config_tax";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:77;a:6:{s:10:"setting_id";s:5:"15312";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:10:"config_vat";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:78;a:6:{s:10:"setting_id";s:5:"15313";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:18:"config_tax_default";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:79;a:6:{s:10:"setting_id";s:5:"15314";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:19:"config_tax_customer";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:80;a:6:{s:10:"setting_id";s:5:"15315";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:22:"config_customer_online";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:81;a:6:{s:10:"setting_id";s:5:"15316";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:24:"config_customer_group_id";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:82;a:6:{s:10:"setting_id";s:5:"15317";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:29:"config_customer_group_display";s:5:"value";s:18:"a:1:{i:0;s:1:"1";}";s:10:"serialized";s:1:"1";}i:83;a:6:{s:10:"setting_id";s:5:"15318";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:21:"config_customer_price";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:84;a:6:{s:10:"setting_id";s:5:"15319";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:21:"config_discount_login";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:85;a:6:{s:10:"setting_id";s:5:"15320";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:23:"config_discount_display";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:86;a:6:{s:10:"setting_id";s:5:"15321";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:22:"config_discount_coupon";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:87;a:6:{s:10:"setting_id";s:5:"15322";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:17:"config_account_id";s:5:"value";s:1:"3";s:10:"serialized";s:1:"0";}i:88;a:6:{s:10:"setting_id";s:5:"15323";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:18:"config_cart_weight";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:89;a:6:{s:10:"setting_id";s:5:"15324";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:21:"config_guest_checkout";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:90;a:6:{s:10:"setting_id";s:5:"15325";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:18:"config_checkout_id";s:5:"value";s:1:"5";s:10:"serialized";s:1:"0";}i:91;a:6:{s:10:"setting_id";s:5:"15326";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:17:"config_order_edit";s:5:"value";s:3:"100";s:10:"serialized";s:1:"0";}i:92;a:6:{s:10:"setting_id";s:5:"15327";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:21:"config_invoice_prefix";s:5:"value";s:11:"INV-2013-00";s:10:"serialized";s:1:"0";}i:93;a:6:{s:10:"setting_id";s:5:"15328";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:22:"config_order_status_id";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:94;a:6:{s:10:"setting_id";s:5:"15329";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:25:"config_complete_status_id";s:5:"value";s:1:"5";s:10:"serialized";s:1:"0";}i:95;a:6:{s:10:"setting_id";s:5:"15330";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:20:"config_stock_display";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:96;a:6:{s:10:"setting_id";s:5:"15331";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:20:"config_stock_warning";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:97;a:6:{s:10:"setting_id";s:5:"15332";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:21:"config_stock_checkout";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:98;a:6:{s:10:"setting_id";s:5:"15333";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:22:"config_stock_status_id";s:5:"value";s:1:"5";s:10:"serialized";s:1:"0";}i:99;a:6:{s:10:"setting_id";s:5:"15334";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:19:"config_affiliate_id";s:5:"value";s:1:"4";s:10:"serialized";s:1:"0";}i:100;a:6:{s:10:"setting_id";s:5:"15335";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:17:"config_commission";s:5:"value";s:1:"5";s:10:"serialized";s:1:"0";}i:101;a:6:{s:10:"setting_id";s:5:"15336";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:16:"config_return_id";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:102;a:6:{s:10:"setting_id";s:5:"15337";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:23:"config_return_status_id";s:5:"value";s:1:"2";s:10:"serialized";s:1:"0";}i:103;a:6:{s:10:"setting_id";s:5:"15338";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:11:"config_logo";s:5:"value";s:24:"data/armada_logotype.png";s:10:"serialized";s:1:"0";}i:104;a:6:{s:10:"setting_id";s:5:"15339";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:11:"config_icon";s:5:"value";s:20:"data/a-100x100-2.png";s:10:"serialized";s:1:"0";}i:105;a:6:{s:10:"setting_id";s:5:"15340";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:27:"config_image_category_width";s:5:"value";s:3:"680";s:10:"serialized";s:1:"0";}i:106;a:6:{s:10:"setting_id";s:5:"15341";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:28:"config_image_category_height";s:5:"value";s:3:"190";s:10:"serialized";s:1:"0";}i:107;a:6:{s:10:"setting_id";s:5:"15342";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:24:"config_image_thumb_width";s:5:"value";s:3:"690";s:10:"serialized";s:1:"0";}i:108;a:6:{s:10:"setting_id";s:5:"15343";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:25:"config_image_thumb_height";s:5:"value";s:3:"690";s:10:"serialized";s:1:"0";}i:109;a:6:{s:10:"setting_id";s:5:"15344";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:24:"config_image_popup_width";s:5:"value";s:3:"900";s:10:"serialized";s:1:"0";}i:110;a:6:{s:10:"setting_id";s:5:"15345";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:25:"config_image_popup_height";s:5:"value";s:3:"900";s:10:"serialized";s:1:"0";}i:111;a:6:{s:10:"setting_id";s:5:"15346";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:26:"config_image_product_width";s:5:"value";s:3:"190";s:10:"serialized";s:1:"0";}i:112;a:6:{s:10:"setting_id";s:5:"15347";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:27:"config_image_product_height";s:5:"value";s:3:"190";s:10:"serialized";s:1:"0";}i:113;a:6:{s:10:"setting_id";s:5:"15348";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:29:"config_image_additional_width";s:5:"value";s:2:"60";s:10:"serialized";s:1:"0";}i:114;a:6:{s:10:"setting_id";s:5:"15349";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:30:"config_image_additional_height";s:5:"value";s:2:"60";s:10:"serialized";s:1:"0";}i:115;a:6:{s:10:"setting_id";s:5:"15350";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:26:"config_image_related_width";s:5:"value";s:3:"160";s:10:"serialized";s:1:"0";}i:116;a:6:{s:10:"setting_id";s:5:"15351";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:27:"config_image_related_height";s:5:"value";s:3:"160";s:10:"serialized";s:1:"0";}i:117;a:6:{s:10:"setting_id";s:5:"15352";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:26:"config_image_compare_width";s:5:"value";s:2:"90";s:10:"serialized";s:1:"0";}i:118;a:6:{s:10:"setting_id";s:5:"15353";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:27:"config_image_compare_height";s:5:"value";s:2:"90";s:10:"serialized";s:1:"0";}i:119;a:6:{s:10:"setting_id";s:5:"15354";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:27:"config_image_wishlist_width";s:5:"value";s:2:"47";s:10:"serialized";s:1:"0";}i:120;a:6:{s:10:"setting_id";s:5:"15355";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:28:"config_image_wishlist_height";s:5:"value";s:2:"47";s:10:"serialized";s:1:"0";}i:121;a:6:{s:10:"setting_id";s:5:"15356";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:23:"config_image_cart_width";s:5:"value";s:2:"47";s:10:"serialized";s:1:"0";}i:122;a:6:{s:10:"setting_id";s:5:"15357";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:24:"config_image_cart_height";s:5:"value";s:2:"47";s:10:"serialized";s:1:"0";}i:123;a:6:{s:10:"setting_id";s:5:"15358";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:15:"config_ftp_host";s:5:"value";s:13:"armadashop.by";s:10:"serialized";s:1:"0";}i:124;a:6:{s:10:"setting_id";s:5:"15359";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:15:"config_ftp_port";s:5:"value";s:2:"21";s:10:"serialized";s:1:"0";}i:125;a:6:{s:10:"setting_id";s:5:"15360";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:19:"config_ftp_username";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:126;a:6:{s:10:"setting_id";s:5:"15361";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:19:"config_ftp_password";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:127;a:6:{s:10:"setting_id";s:5:"15362";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:15:"config_ftp_root";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:128;a:6:{s:10:"setting_id";s:5:"15363";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:17:"config_ftp_status";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:129;a:6:{s:10:"setting_id";s:5:"15364";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:20:"config_mail_protocol";s:5:"value";s:4:"mail";s:10:"serialized";s:1:"0";}i:130;a:6:{s:10:"setting_id";s:5:"15365";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:21:"config_mail_parameter";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:131;a:6:{s:10:"setting_id";s:5:"15366";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:16:"config_smtp_host";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:132;a:6:{s:10:"setting_id";s:5:"15367";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:20:"config_smtp_username";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:133;a:6:{s:10:"setting_id";s:5:"15368";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:20:"config_smtp_password";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:134;a:6:{s:10:"setting_id";s:5:"15369";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:16:"config_smtp_port";s:5:"value";s:2:"25";s:10:"serialized";s:1:"0";}i:135;a:6:{s:10:"setting_id";s:5:"15370";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:19:"config_smtp_timeout";s:5:"value";s:1:"5";s:10:"serialized";s:1:"0";}i:136;a:6:{s:10:"setting_id";s:5:"15371";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:17:"config_alert_mail";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:137;a:6:{s:10:"setting_id";s:5:"15372";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:19:"config_account_mail";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:138;a:6:{s:10:"setting_id";s:5:"15373";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:19:"config_alert_emails";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:139;a:6:{s:10:"setting_id";s:5:"15374";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:22:"config_fraud_detection";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:140;a:6:{s:10:"setting_id";s:5:"15375";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:16:"config_fraud_key";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:141;a:6:{s:10:"setting_id";s:5:"15376";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:18:"config_fraud_score";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:142;a:6:{s:10:"setting_id";s:5:"15377";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:22:"config_fraud_status_id";s:5:"value";s:1:"7";s:10:"serialized";s:1:"0";}i:143;a:6:{s:10:"setting_id";s:5:"15378";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:13:"config_secure";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:144;a:6:{s:10:"setting_id";s:5:"15379";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:13:"config_shared";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:145;a:6:{s:10:"setting_id";s:5:"15380";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:13:"config_robots";s:5:"value";s:3814:"abot
+dbot
+ebot
+hbot
+kbot
+lbot
+mbot
+nbot
+obot
+pbot
+rbot
+sbot
+tbot
+vbot
+ybot
+zbot
+bot.
+bot/
+_bot
+.bot
+/bot
+-bot
+:bot
+(bot
+crawl
+slurp
+spider
+seek
+accoona
+acoon
+adressendeutschland
+ah-ha.com
+ahoy
+altavista
+ananzi
+anthill
+appie
+arachnophilia
+arale
+araneo
+aranha
+architext
+aretha
+arks
+asterias
+atlocal
+atn
+atomz
+augurfind
+backrub
+bannana_bot
+baypup
+bdfetch
+big brother
+biglotron
+bjaaland
+blackwidow
+blaiz
+blog
+blo.
+bloodhound
+boitho
+booch
+bradley
+butterfly
+calif
+cassandra
+ccubee
+cfetch
+charlotte
+churl
+cienciaficcion
+cmc
+collective
+comagent
+combine
+computingsite
+csci
+curl
+cusco
+daumoa
+deepindex
+delorie
+depspid
+deweb
+die blinde kuh
+digger
+ditto
+dmoz
+docomo
+download express
+dtaagent
+dwcp
+ebiness
+ebingbong
+e-collector
+ejupiter
+emacs-w3 search engine
+esther
+evliya celebi
+ezresult
+falcon
+felix ide
+ferret
+fetchrover
+fido
+findlinks
+fireball
+fish search
+fouineur
+funnelweb
+gazz
+gcreep
+genieknows
+getterroboplus
+geturl
+glx
+goforit
+golem
+grabber
+grapnel
+gralon
+griffon
+gromit
+grub
+gulliver
+hamahakki
+harvest
+havindex
+helix
+heritrix
+hku www octopus
+homerweb
+htdig
+html index
+html_analyzer
+htmlgobble
+hubater
+hyper-decontextualizer
+ia_archiver
+ibm_planetwide
+ichiro
+iconsurf
+iltrovatore
+image.kapsi.net
+imagelock
+incywincy
+indexer
+infobee
+informant
+ingrid
+inktomisearch.com
+inspector web
+intelliagent
+internet shinchakubin
+ip3000
+iron33
+israeli-search
+ivia
+jack
+jakarta
+javabee
+jetbot
+jumpstation
+katipo
+kdd-explorer
+kilroy
+knowledge
+kototoi
+kretrieve
+labelgrabber
+lachesis
+larbin
+legs
+libwww
+linkalarm
+link validator
+linkscan
+lockon
+lwp
+lycos
+magpie
+mantraagent
+mapoftheinternet
+marvin/
+mattie
+mediafox
+mediapartners
+mercator
+merzscope
+microsoft url control
+minirank
+miva
+mj12
+mnogosearch
+moget
+monster
+moose
+motor
+multitext
+muncher
+muscatferret
+mwd.search
+myweb
+najdi
+nameprotect
+nationaldirectory
+nazilla
+ncsa beta
+nec-meshexplorer
+nederland.zoek
+netcarta webmap engine
+netmechanic
+netresearchserver
+netscoop
+newscan-online
+nhse
+nokia6682/
+nomad
+noyona
+nutch
+nzexplorer
+objectssearch
+occam
+omni
+open text
+openfind
+openintelligencedata
+orb search
+osis-project
+pack rat
+pageboy
+pagebull
+page_verifier
+panscient
+parasite
+partnersite
+patric
+pear.
+pegasus
+peregrinator
+pgp key agent
+phantom
+phpdig
+picosearch
+piltdownman
+pimptrain
+pinpoint
+pioneer
+piranha
+plumtreewebaccessor
+pogodak
+poirot
+pompos
+poppelsdorf
+poppi
+popular iconoclast
+psycheclone
+publisher
+python
+rambler
+raven search
+roach
+road runner
+roadhouse
+robbie
+robofox
+robozilla
+rules
+salty
+sbider
+scooter
+scoutjet
+scrubby
+search.
+searchprocess
+semanticdiscovery
+senrigan
+sg-scout
+shai'hulud
+shark
+shopwiki
+sidewinder
+sift
+silk
+simmany
+site searcher
+site valet
+sitetech-rover
+skymob.com
+sleek
+smartwit
+sna-
+snappy
+snooper
+sohu
+speedfind
+sphere
+sphider
+spinner
+spyder
+steeler/
+suke
+suntek
+supersnooper
+surfnomore
+sven
+sygol
+szukacz
+tach black widow
+tarantula
+templeton
+/teoma
+t-h-u-n-d-e-r-s-t-o-n-e
+theophrastus
+titan
+titin
+tkwww
+toutatis
+t-rex
+tutorgig
+twiceler
+twisted
+ucsd
+udmsearch
+url check
+updated
+vagabondo
+valkyrie
+verticrawl
+victoria
+vision-search
+volcano
+voyager/
+voyager-hc
+w3c_validator
+w3m2
+w3mir
+walker
+wallpaper
+wanderer
+wauuu
+wavefire
+web core
+web hopper
+web wombat
+webbandit
+webcatcher
+webcopy
+webfoot
+weblayers
+weblinker
+weblog monitor
+webmirror
+webmonkey
+webquest
+webreaper
+websitepulse
+websnarf
+webstolperer
+webvac
+webwalk
+webwatch
+webwombat
+webzinger
+whizbang
+whowhere
+wild ferret
+worldlight
+wwwc
+wwwster
+xenu
+xget
+xift
+xirq
+yandex
+yanga
+yeti
+yodao
+zao
+zippp
+zyborg";s:10:"serialized";s:1:"0";}i:146;a:6:{s:10:"setting_id";s:5:"15170";s:8:"store_id";s:1:"0";s:5:"group";s:18:"advanced_slideshow";s:3:"key";s:21:"slider_general_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:147;a:6:{s:10:"setting_id";s:5:"15171";s:8:"store_id";s:1:"0";s:5:"group";s:18:"advanced_slideshow";s:3:"key";s:13:"slider_height";s:5:"value";s:3:"460";s:10:"serialized";s:1:"0";}i:148;a:6:{s:10:"setting_id";s:5:"15172";s:8:"store_id";s:1:"0";s:5:"group";s:18:"advanced_slideshow";s:3:"key";s:12:"slider_delay";s:5:"value";s:2:"10";s:10:"serialized";s:1:"0";}i:149;a:6:{s:10:"setting_id";s:5:"15173";s:8:"store_id";s:1:"0";s:5:"group";s:18:"advanced_slideshow";s:3:"key";s:18:"slider_main_layout";s:5:"value";s:9:"fullwidth";s:10:"serialized";s:1:"0";}i:150;a:6:{s:10:"setting_id";s:5:"15174";s:8:"store_id";s:1:"0";s:5:"group";s:18:"advanced_slideshow";s:3:"key";s:15:"slides_quantity";s:5:"value";s:1:"3";s:10:"serialized";s:1:"0";}i:151;a:6:{s:10:"setting_id";s:5:"15175";s:8:"store_id";s:1:"0";s:5:"group";s:18:"advanced_slideshow";s:3:"key";s:17:"elements_quantity";s:5:"value";s:1:"6";s:10:"serialized";s:1:"0";}i:152;a:6:{s:10:"setting_id";s:5:"15176";s:8:"store_id";s:1:"0";s:5:"group";s:18:"advanced_slideshow";s:3:"key";s:6:"slider";s:5:"value";s:11494:"a:3:{i:1;a:2:{i:2;a:10:{s:6:"status";s:1:"0";s:6:"banner";s:22:"data/sebbigeiger_7.jpg";s:4:"link";s:27:"http://armadashop.by/offers";s:17:"transition_effect";s:6:"random";i:1;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:214:"&lt;h1&gt;&lt;/h1&gt;
+&lt;h3&gt;Лучшие подарки на 23 февраля ! &lt;/h3&gt;
+&lt;h3&gt;Мужчина - лучшее что придумала
+природа для женщин ! &lt;/h3&gt;";s:5:"style";s:11:"medium_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"350";s:1:"y";s:3:"250";}i:2;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:32:"data/discounts-of-up-to-50-1.jpg";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:8:"noshadow";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:4:"1000";s:1:"x";s:1:"0";s:1:"y";s:2:"50";}i:3;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:4:"1500";s:1:"x";s:3:"630";s:1:"y";s:3:"200";}i:4;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:5;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:6;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}}i:1;a:10:{s:6:"status";s:1:"0";s:6:"banner";s:0:"";s:4:"link";s:0:"";s:17:"transition_effect";s:6:"random";i:1;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:2;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:3;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:4;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:5;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:6;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}}}i:2;a:2:{i:2;a:10:{s:6:"status";s:1:"1";s:6:"banner";s:57:"data/ski-girl-lying-on-snow-in-swiss_1920x1080_993-hd.jpg";s:4:"link";s:27:"http://armadashop.by/heated";s:17:"transition_effect";s:6:"random";i:1;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:124:"&lt;h1&gt; Любишь больше?... &lt;/h1&gt; &lt;h3&gt;смотри раздел &quot;ХАЛЯВА&quot;&lt;/h3&gt;";s:5:"style";s:9:"big_white";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:1:"0";s:1:"y";s:3:"300";}i:2;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:24:"data/30_discount_big.png";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"627";s:1:"y";s:3:"274";}i:3;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:4;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:5;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:6;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}}i:1;a:10:{s:6:"status";s:1:"1";s:6:"banner";s:56:"data/AH_pics/alpenheat_winter/AH_LIFE_JM_0002_resize.jpg";s:4:"link";s:0:"";s:17:"transition_effect";s:6:"random";i:1;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:113:"&lt;h1&gt;Alpenheat&lt;/h1&gt;
+&lt;h3&gt;Одежда и аксессуары с подогревом&lt;/h3&gt;";s:5:"style";s:9:"big_white";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:2;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:3;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:4;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:5;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:6;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}}}i:3;a:2:{i:2;a:10:{s:6:"status";s:1:"1";s:6:"banner";s:30:"data/bataleon_banner_board.jpg";s:4:"link";s:0:"";s:17:"transition_effect";s:6:"random";i:1;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:22:"data/bataleon_logo.png";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:1:"0";s:1:"y";s:2:"25";}i:2;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:16:"data/lobster.png";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"200";s:5:"start";s:3:"600";s:1:"x";s:3:"300";s:1:"y";s:2:"50";}i:3;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:18:"data/whitegold.png";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"200";s:5:"start";s:3:"700";s:1:"x";s:3:"300";s:1:"y";s:3:"185";}i:4;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:19:"data/switchback.png";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"200";s:5:"start";s:3:"800";s:1:"x";s:3:"315";s:1:"y";s:3:"295";}i:5;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:12:"data/tbt.png";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"200";s:5:"start";s:3:"900";s:1:"x";s:3:"400";s:1:"y";s:1:"0";}i:6;a:11:{s:6:"status";s:1:"1";s:11:"extra_image";s:22:"data/bataleon_text.png";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"400";s:5:"start";s:4:"1200";s:1:"x";s:3:"450";s:1:"y";s:2:"70";}}i:1;a:10:{s:6:"status";s:1:"0";s:6:"banner";s:176:"&lt;b&gt;Notice&lt;/b&gt;: Undefined offset: 3 in &lt;b&gt;/home/armadash/public_html/admin/view/template/module/advanced_slideshow.tpl&lt;/b&gt; on line &lt;b&gt;290&lt;/b&gt;";s:4:"link";s:0:"";s:17:"transition_effect";s:6:"random";i:1;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:2;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:3;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:4;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:5;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}i:6;a:11:{s:6:"status";s:1:"0";s:11:"extra_image";s:0:"";s:5:"video";s:0:"";s:4:"text";s:0:"";s:5:"style";s:10:"small_text";s:6:"easing";s:11:"easeOutBack";s:9:"endeasing";s:11:"easeOutBack";s:5:"speed";s:3:"300";s:5:"start";s:3:"300";s:1:"x";s:3:"100";s:1:"y";s:3:"100";}}}}";s:10:"serialized";s:1:"1";}i:153;a:6:{s:10:"setting_id";s:5:"14308";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:19:"clearshop_custom_js";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:154;a:6:{s:10:"setting_id";s:5:"14307";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:20:"clearshop_custom_css";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:155;a:6:{s:10:"setting_id";s:5:"14305";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:19:"clearshop_copyright";s:5:"value";s:151:"&lt;p&gt;&lt;sub&gt;ИП Растворцев А.А. УНП 191889980&lt;/sub&gt;&lt;br /&gt;
+ARMADASHOP.BY&amp;nbsp;©2013 BELARUS, MINSK&lt;/p&gt;
+";s:10:"serialized";s:1:"0";}i:156;a:6:{s:10:"setting_id";s:5:"14306";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:27:"clearshop_custom_stylesheet";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:157;a:6:{s:10:"setting_id";s:5:"14304";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_footer_info_text";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:158;a:6:{s:10:"setting_id";s:5:"14303";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:29:"clearshop_contact_custom_text";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:159;a:6:{s:10:"setting_id";s:5:"14302";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:15:"clearshop_email";s:5:"value";s:23:"armadashop.by@gmail.com";s:10:"serialized";s:1:"0";}i:160;a:6:{s:10:"setting_id";s:5:"14301";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:16:"clearshop_phone2";s:5:"value";s:17:"+375 33 69 111 56";s:10:"serialized";s:1:"0";}i:161;a:6:{s:10:"setting_id";s:5:"14300";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:16:"clearshop_phone1";s:5:"value";s:17:"+375 29 69 111 56";s:10:"serialized";s:1:"0";}i:162;a:6:{s:10:"setting_id";s:5:"14298";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:28:"clearshop_instagram_username";s:5:"value";s:12:"armadashopby";s:10:"serialized";s:1:"0";}i:163;a:6:{s:10:"setting_id";s:5:"14299";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:17:"clearshop_address";s:5:"value";s:70:"&lt;p&gt;Шоурум:&amp;nbsp;Ольшевского 1а&lt;/p&gt;
+";s:10:"serialized";s:1:"0";}i:164;a:6:{s:10:"setting_id";s:5:"14297";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:22:"clearshop_pinterest_id";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:165;a:6:{s:10:"setting_id";s:5:"14295";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_skype_username";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:166;a:6:{s:10:"setting_id";s:5:"14296";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:18:"clearshop_gplus_id";s:5:"value";s:23:"armadashop.by@gmail.com";s:10:"serialized";s:1:"0";}i:167;a:6:{s:10:"setting_id";s:5:"14294";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_tumblr_username";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:168;a:6:{s:10:"setting_id";s:5:"14293";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_youtube_username";s:5:"value";s:12:"armadaXtreme";s:10:"serialized";s:1:"0";}i:169;a:6:{s:10:"setting_id";s:5:"14292";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:23:"clearshop_tweets_number";s:5:"value";s:1:"3";s:10:"serialized";s:1:"0";}i:170;a:6:{s:10:"setting_id";s:5:"14291";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:22:"clearshop_twitter_icon";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:171;a:6:{s:10:"setting_id";s:5:"14290";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:27:"clearshop_show_twitter_feed";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:172;a:6:{s:10:"setting_id";s:5:"14289";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_twitter_asecret";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:173;a:6:{s:10:"setting_id";s:5:"14288";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_twitter_atoken";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:174;a:6:{s:10:"setting_id";s:5:"14287";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_twitter_csecret";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:175;a:6:{s:10:"setting_id";s:5:"14286";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:22:"clearshop_twitter_ckey";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:176;a:6:{s:10:"setting_id";s:5:"14285";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_twitter_username";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:177;a:6:{s:10:"setting_id";s:5:"14284";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:23:"clearshop_facebook_icon";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:178;a:6:{s:10:"setting_id";s:5:"14283";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_facebook_button";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:179;a:6:{s:10:"setting_id";s:5:"14282";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:23:"clearshop_facebook_page";s:5:"value";s:13:"armadashop.by";s:10:"serialized";s:1:"0";}i:180;a:6:{s:10:"setting_id";s:5:"14281";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_header_info_text";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:181;a:6:{s:10:"setting_id";s:5:"14280";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:28:"clearshop_searchbox_position";s:5:"value";s:6:"navbar";s:10:"serialized";s:1:"0";}i:182;a:6:{s:10:"setting_id";s:5:"14279";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:19:"clearshop_searchbox";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:183;a:6:{s:10:"setting_id";s:5:"14278";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:23:"clearshop_logo_position";s:5:"value";s:4:"left";s:10:"serialized";s:1:"0";}i:184;a:6:{s:10:"setting_id";s:5:"14277";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:27:"clearshop_carousel_autoplay";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:185;a:6:{s:10:"setting_id";s:5:"14276";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_related_carousel";s:5:"value";s:2:"on";s:10:"serialized";s:1:"0";}i:186;a:6:{s:10:"setting_id";s:5:"14275";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_special_carousel";s:5:"value";s:2:"on";s:10:"serialized";s:1:"0";}i:187;a:6:{s:10:"setting_id";s:5:"14274";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_latest_carousel";s:5:"value";s:2:"on";s:10:"serialized";s:1:"0";}i:188;a:6:{s:10:"setting_id";s:5:"14273";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:29:"clearshop_bestseller_carousel";s:5:"value";s:2:"on";s:10:"serialized";s:1:"0";}i:189;a:6:{s:10:"setting_id";s:5:"14272";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:27:"clearshop_featured_carousel";s:5:"value";s:2:"on";s:10:"serialized";s:1:"0";}i:190;a:6:{s:10:"setting_id";s:5:"14271";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:32:"clearshop_slider_transition_time";s:5:"value";s:3:"900";s:10:"serialized";s:1:"0";}i:191;a:6:{s:10:"setting_id";s:5:"14270";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:22:"clearshop_slider_speed";s:5:"value";s:4:"5000";s:10:"serialized";s:1:"0";}i:192;a:6:{s:10:"setting_id";s:5:"14269";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:16:"clearshop_slider";s:5:"value";s:10:"flexslider";s:10:"serialized";s:1:"0";}i:193;a:6:{s:10:"setting_id";s:5:"14268";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_small_font_size";s:5:"value";s:2:"11";s:10:"serialized";s:1:"0";}i:194;a:6:{s:10:"setting_id";s:5:"14267";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:20:"clearshop_small_font";s:5:"value";s:9:"Open+Sans";s:10:"serialized";s:1:"0";}i:195;a:6:{s:10:"setting_id";s:5:"14266";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_body_font_size";s:5:"value";s:2:"13";s:10:"serialized";s:1:"0";}i:196;a:6:{s:10:"setting_id";s:5:"14265";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:19:"clearshop_body_font";s:5:"value";s:9:"Open+Sans";s:10:"serialized";s:1:"0";}i:197;a:6:{s:10:"setting_id";s:5:"14264";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_title_font_size";s:5:"value";s:2:"35";s:10:"serialized";s:1:"0";}i:198;a:6:{s:10:"setting_id";s:5:"14263";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:20:"clearshop_title_font";s:5:"value";s:9:"Open+Sans";s:10:"serialized";s:1:"0";}i:199;a:6:{s:10:"setting_id";s:5:"14262";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:29:"clearshop_category_box_border";s:5:"value";s:7:"#FFFFFF";s:10:"serialized";s:1:"0";}i:200;a:6:{s:10:"setting_id";s:5:"14261";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:33:"clearshop_category_box_background";s:5:"value";s:7:"#F9F9F9";s:10:"serialized";s:1:"0";}i:201;a:6:{s:10:"setting_id";s:5:"14260";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:33:"clearshop_categories_active_color";s:5:"value";s:7:"#000000";s:10:"serialized";s:1:"0";}i:202;a:6:{s:10:"setting_id";s:5:"14259";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:30:"clearshop_categories_sub_color";s:5:"value";s:7:"#555555";s:10:"serialized";s:1:"0";}i:203;a:6:{s:10:"setting_id";s:5:"14258";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:31:"clearshop_categories_menu_color";s:5:"value";s:7:"#333333";s:10:"serialized";s:1:"0";}i:204;a:6:{s:10:"setting_id";s:5:"14257";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:27:"clearshop_onsale_text_color";s:5:"value";s:7:"#FFFFFF";s:10:"serialized";s:1:"0";}i:205;a:6:{s:10:"setting_id";s:5:"14256";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:33:"clearshop_onsale_background_color";s:5:"value";s:7:"#DD4B39";s:10:"serialized";s:1:"0";}i:206;a:6:{s:10:"setting_id";s:5:"14255";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_new_price_color";s:5:"value";s:7:"#DD4B39";s:10:"serialized";s:1:"0";}i:207;a:6:{s:10:"setting_id";s:5:"14254";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_old_price_color";s:5:"value";s:7:"#999999";s:10:"serialized";s:1:"0";}i:208;a:6:{s:10:"setting_id";s:5:"14253";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:28:"clearshop_normal_price_color";s:5:"value";s:7:"#555555";s:10:"serialized";s:1:"0";}i:209;a:6:{s:10:"setting_id";s:5:"14252";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:28:"clearshop_product_name_color";s:5:"value";s:7:"#333333";s:10:"serialized";s:1:"0";}i:210;a:6:{s:10:"setting_id";s:5:"14251";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:28:"clearshop_2button_text_color";s:5:"value";s:7:"#FFFFFF";s:10:"serialized";s:1:"0";}i:211;a:6:{s:10:"setting_id";s:5:"14250";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:30:"clearshop_2button_border_color";s:5:"value";s:7:"#373737";s:10:"serialized";s:1:"0";}i:212;a:6:{s:10:"setting_id";s:5:"14249";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:30:"clearshop_2button_bottom_color";s:5:"value";s:7:"#191919";s:10:"serialized";s:1:"0";}i:213;a:6:{s:10:"setting_id";s:5:"14248";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:27:"clearshop_2button_top_color";s:5:"value";s:7:"#505050";s:10:"serialized";s:1:"0";}i:214;a:6:{s:10:"setting_id";s:5:"14247";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:27:"clearshop_button_text_color";s:5:"value";s:7:"#FFFFFF";s:10:"serialized";s:1:"0";}i:215;a:6:{s:10:"setting_id";s:5:"14246";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:29:"clearshop_button_border_color";s:5:"value";s:7:"#C53727";s:10:"serialized";s:1:"0";}i:216;a:6:{s:10:"setting_id";s:5:"14245";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:29:"clearshop_button_bottom_color";s:5:"value";s:7:"#DD4B39";s:10:"serialized";s:1:"0";}i:217;a:6:{s:10:"setting_id";s:5:"14244";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_button_top_color";s:5:"value";s:7:"#DD4B39";s:10:"serialized";s:1:"0";}i:218;a:6:{s:10:"setting_id";s:5:"14243";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:28:"clearshop_footer_links_color";s:5:"value";s:7:"#999999";s:10:"serialized";s:1:"0";}i:219;a:6:{s:10:"setting_id";s:5:"14242";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:27:"clearshop_footer_text_color";s:5:"value";s:7:"#555555";s:10:"serialized";s:1:"0";}i:220;a:6:{s:10:"setting_id";s:5:"14241";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_lighttext_color";s:5:"value";s:7:"#BBBBBB";s:10:"serialized";s:1:"0";}i:221;a:6:{s:10:"setting_id";s:5:"14240";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:29:"clearshop_content_links_color";s:5:"value";s:7:"#18C1DB";s:10:"serialized";s:1:"0";}i:222;a:6:{s:10:"setting_id";s:5:"14239";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_bodytext_color";s:5:"value";s:7:"#555555";s:10:"serialized";s:1:"0";}i:223;a:6:{s:10:"setting_id";s:5:"14238";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:21:"clearshop_title_color";s:5:"value";s:7:"#333333";s:10:"serialized";s:1:"0";}i:224;a:6:{s:10:"setting_id";s:5:"14237";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_background_color";s:5:"value";s:7:"#FFFFFF";s:10:"serialized";s:1:"0";}i:225;a:6:{s:10:"setting_id";s:5:"14236";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_cart_total_color";s:5:"value";s:7:"#000000";s:10:"serialized";s:1:"0";}i:226;a:6:{s:10:"setting_id";s:5:"14235";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_cart_count_color";s:5:"value";s:7:"#FFFFFF";s:10:"serialized";s:1:"0";}i:227;a:6:{s:10:"setting_id";s:5:"14234";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:31:"clearshop_cart_count_background";s:5:"value";s:7:"#DD4B39";s:10:"serialized";s:1:"0";}i:228;a:6:{s:10:"setting_id";s:5:"14233";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_dropdown_hover";s:5:"value";s:7:"#555555";s:10:"serialized";s:1:"0";}i:229;a:6:{s:10:"setting_id";s:5:"14232";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_dropdown_color";s:5:"value";s:7:"#333333";s:10:"serialized";s:1:"0";}i:230;a:6:{s:10:"setting_id";s:5:"14231";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:20:"clearshop_menu_hover";s:5:"value";s:7:"#DD4B39";s:10:"serialized";s:1:"0";}i:231;a:6:{s:10:"setting_id";s:5:"14230";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:20:"clearshop_menu_color";s:5:"value";s:7:"#333333";s:10:"serialized";s:1:"0";}i:232;a:6:{s:10:"setting_id";s:5:"14229";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_thickbar_color";s:5:"value";s:7:"#DD4B39";s:10:"serialized";s:1:"0";}i:233;a:6:{s:10:"setting_id";s:5:"14228";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:23:"clearshop_custom_colors";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:234;a:6:{s:10:"setting_id";s:5:"14227";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_full_background";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:235;a:6:{s:10:"setting_id";s:5:"14226";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:22:"clearshop_custom_image";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:236;a:6:{s:10:"setting_id";s:5:"14225";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_custom_pattern";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:237;a:6:{s:10:"setting_id";s:5:"14224";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_pattern_overlay";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:238;a:6:{s:10:"setting_id";s:5:"14223";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:15:"clearshop_skins";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:239;a:6:{s:10:"setting_id";s:5:"14222";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:26:"clearshop_show_sale_bubble";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:240;a:6:{s:10:"setting_id";s:5:"14221";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:22:"clearshop_show_compare";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:241;a:6:{s:10:"setting_id";s:5:"14220";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:23:"clearshop_show_wishlist";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:242;a:6:{s:10:"setting_id";s:5:"14219";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_toggle_sidebar";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:243;a:6:{s:10:"setting_id";s:5:"14218";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_quickview_zoom";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:244;a:6:{s:10:"setting_id";s:5:"14217";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:27:"clearshop_quickview_modules";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:245;a:6:{s:10:"setting_id";s:5:"14216";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:30:"clearshop_quickview_categories";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:246;a:6:{s:10:"setting_id";s:5:"14215";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:23:"clearshop_prevnext_mode";s:5:"value";s:4:"full";s:10:"serialized";s:1:"0";}i:247;a:6:{s:10:"setting_id";s:5:"14214";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:23:"clearshop_zoom_autosize";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:248;a:6:{s:10:"setting_id";s:5:"14213";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:21:"clearshop_zoom_height";s:5:"value";s:3:"360";s:10:"serialized";s:1:"0";}i:249;a:6:{s:10:"setting_id";s:5:"14212";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:20:"clearshop_zoom_width";s:5:"value";s:3:"360";s:10:"serialized";s:1:"0";}i:250;a:6:{s:10:"setting_id";s:5:"14211";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:23:"clearshop_zoom_position";s:5:"value";s:5:"right";s:10:"serialized";s:1:"0";}i:251;a:6:{s:10:"setting_id";s:5:"14210";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:20:"clearshop_cloud_zoom";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:252;a:6:{s:10:"setting_id";s:5:"14209";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_product_layout";s:5:"value";s:1:"3";s:10:"serialized";s:1:"0";}i:253;a:6:{s:10:"setting_id";s:5:"14208";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:29:"clearshop_subcat_thumb_height";s:5:"value";s:3:"140";s:10:"serialized";s:1:"0";}i:254;a:6:{s:10:"setting_id";s:5:"14207";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:28:"clearshop_subcat_thumb_width";s:5:"value";s:3:"140";s:10:"serialized";s:1:"0";}i:255;a:6:{s:10:"setting_id";s:5:"14206";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:34:"clearshop_subcat_thumbnails_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:256;a:6:{s:10:"setting_id";s:5:"14205";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:23:"clearshop_subcat_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:257;a:6:{s:10:"setting_id";s:5:"14204";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:29:"clearshop_display_cart_button";s:5:"value";s:1:"0";s:10:"serialized";s:1:"0";}i:258;a:6:{s:10:"setting_id";s:5:"14203";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:25:"clearshop_product_columns";s:5:"value";s:1:"4";s:10:"serialized";s:1:"0";}i:259;a:6:{s:10:"setting_id";s:5:"14202";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:24:"clearshop_category_style";s:5:"value";s:4:"grid";s:10:"serialized";s:1:"0";}i:260;a:6:{s:10:"setting_id";s:5:"14201";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:29:"clearshop_sidebar_right_width";s:5:"value";s:1:"3";s:10:"serialized";s:1:"0";}i:261;a:6:{s:10:"setting_id";s:5:"14200";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:28:"clearshop_sidebar_left_width";s:5:"value";s:1:"3";s:10:"serialized";s:1:"0";}i:262;a:6:{s:10:"setting_id";s:5:"15294";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:15:"config_template";s:5:"value";s:9:"clearshop";s:10:"serialized";s:1:"0";}i:263;a:6:{s:10:"setting_id";s:5:"15293";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:23:"config_meta_description";s:5:"value";s:1309:"Интернет-магазин занимается продажей спортивной одежды для райдеров, людей увлекающихся спортом и ценящих в своей одежде и экипе качество, удобство, стиль и индивидуальность.
+
+На данный момент мы являемся официальным дистрибьютором чешского брэнда Horsefeathers в Беларуси, который достойно занимает своё место среди популярных брендов одежды для скейтеров и сноубордистов по всей Европе.
+
+Также мы являемся официальным дистрибьютором австрийской компании ALPENHEAT, предлагающей уникальную продукцию в сегменте одежды и аксессуаров с подогревом. Да, это что-то новенькое для Беларуси, но уже привычное для Европы, поэтому давайте догонять и пользоваться преимуществами последних достижений в сфере спорта и экстрима!";s:10:"serialized";s:1:"0";}i:264;a:6:{s:10:"setting_id";s:5:"15291";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:10:"config_fax";s:5:"value";s:0:"";s:10:"serialized";s:1:"0";}i:265;a:6:{s:10:"setting_id";s:5:"15290";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:16:"config_telephone";s:5:"value";s:17:"+375 29 69 111 56";s:10:"serialized";s:1:"0";}i:266;a:6:{s:10:"setting_id";s:5:"15289";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:12:"config_email";s:5:"value";s:23:"armadashop.by@gmail.com";s:10:"serialized";s:1:"0";}i:267;a:6:{s:10:"setting_id";s:5:"15288";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:14:"config_address";s:5:"value";s:119:"Шоурум : г.Минск ул.Ольшевского 1a, время работы 9:00-21:00 без выходных";s:10:"serialized";s:1:"0";}i:268;a:6:{s:10:"setting_id";s:5:"15287";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:12:"config_owner";s:5:"value";s:49:"ИП Растворцев А.А. УНП 191889980";s:10:"serialized";s:1:"0";}i:269;a:6:{s:10:"setting_id";s:5:"15286";s:8:"store_id";s:1:"0";s:5:"group";s:6:"config";s:3:"key";s:11:"config_name";s:5:"value";s:127:"ARMADA - интернет-магазин товаров для экстремального и активного отдыха.";s:10:"serialized";s:1:"0";}i:270;a:6:{s:10:"setting_id";s:5:"11442";s:8:"store_id";s:1:"0";s:5:"group";s:13:"yandex_market";s:3:"key";s:26:"yandex_market_out_of_stock";s:5:"value";s:1:"5";s:10:"serialized";s:1:"0";}i:271;a:6:{s:10:"setting_id";s:5:"11441";s:8:"store_id";s:1:"0";s:5:"group";s:13:"yandex_market";s:3:"key";s:22:"yandex_market_in_stock";s:5:"value";s:1:"5";s:10:"serialized";s:1:"0";}i:272;a:6:{s:10:"setting_id";s:5:"11440";s:8:"store_id";s:1:"0";s:5:"group";s:13:"yandex_market";s:3:"key";s:22:"yandex_market_currency";s:5:"value";s:3:"BYR";s:10:"serialized";s:1:"0";}i:273;a:6:{s:10:"setting_id";s:5:"11439";s:8:"store_id";s:1:"0";s:5:"group";s:13:"yandex_market";s:3:"key";s:24:"yandex_market_categories";s:5:"value";s:135:"73,74,75,76,62,95,81,93,96,78,79,94,61,88,71,90,64,66,91,69,89,60,80,92,84,70,67,86,59,65,87,68,85,82,83,72,97,98,99,100,101,102,103,77";s:10:"serialized";s:1:"0";}i:274;a:6:{s:10:"setting_id";s:5:"11436";s:8:"store_id";s:1:"0";s:5:"group";s:13:"yandex_market";s:3:"key";s:20:"yandex_market_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}i:275;a:6:{s:10:"setting_id";s:5:"11437";s:8:"store_id";s:1:"0";s:5:"group";s:13:"yandex_market";s:3:"key";s:22:"yandex_market_shopname";s:5:"value";s:6:"Armada";s:10:"serialized";s:1:"0";}i:276;a:6:{s:10:"setting_id";s:5:"11438";s:8:"store_id";s:1:"0";s:5:"group";s:13:"yandex_market";s:3:"key";s:21:"yandex_market_company";s:5:"value";s:32:"ИП Растворцев А.А.";s:10:"serialized";s:1:"0";}i:277;a:6:{s:10:"setting_id";s:5:"14199";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:21:"clearshop_main_layout";s:5:"value";s:6:"normal";s:10:"serialized";s:1:"0";}i:278;a:6:{s:10:"setting_id";s:5:"14198";s:8:"store_id";s:1:"0";s:5:"group";s:9:"clearshop";s:3:"key";s:16:"clearshop_status";s:5:"value";s:1:"1";s:10:"serialized";s:1:"0";}}s:8:"num_rows";i:279;s:3:"sql";s:85:"SELECT * FROM oc_setting WHERE store_id = '0' OR store_id = '0' ORDER BY store_id ASC";s:4:"time";i:1400588724;}

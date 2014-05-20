@@ -1,0 +1,1 @@
+O:8:"stdClass":5:{s:3:"row";a:0:{}s:4:"rows";a:0:{}s:8:"num_rows";i:0;s:3:"sql";s:81:"SELECT * FROM oc_store WHERE REPLACE(`url`, 'www.', '') = 'http://armadashop.by/'";s:4:"time";i:1400588724;}

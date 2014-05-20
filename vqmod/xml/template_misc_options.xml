@@ -1,0 +1,151 @@
+<modification>
+	
+	<id>Miscellaneous template options</id>
+	<version>1.1.0</version>
+	<vqmver>2.1</vqmver>
+	<author>everthemes.com</author>
+
+	<!-- Make banner width available in carousel template file -->
+	
+	<file name="catalog/controller/module/carousel.php">
+		<operation>
+			<search position="after"><![CDATA[$this->data['scroll'] = $setting['scroll'];]]></search>
+			<add><![CDATA[
+				$this->data['width'] = $setting['width'];
+				]]></add>
+		</operation>
+	</file>
+
+	<!-- Use Bootstrap pagination style -->
+
+	<file name="system/library/pagination.php">
+		
+		<operation>
+			<search position="replace" offset="3" ><![CDATA[public $text_first = '|&lt;';]]></search>
+			<add><![CDATA[
+				public $text_first = '<i class="icon-double-angle-left"></i>';
+				public $text_last = '<i class="icon-double-angle-right"></i>';
+				public $text_next = '<i class="icon-angle-right"></i>';
+				public $text_prev = '<i class="icon-angle-left"></i>';]]></add>
+		</operation>
+
+	</file>
+
+	<!-- Add multilanguage support on the Slideshow -->
+
+	<file name="catalog/controller/common/home.php">
+		<operation>
+			<search position="after"><![CDATA[
+			$this->data['heading_title'] = $this->config->get('config_title');
+			]]></search>
+			<add><![CDATA[
+			$this->load->model('localisation/language');
+
+			$languages = $this->model_localisation_language->getLanguages();
+			foreach ($languages as $language) {
+				if ($language['code'] == $this->session->data['language']) {
+					$this->data['language_id'] = $language['language_id'];
+				}
+			}
+				]]></add>
+		</operation>
+
+	</file>
+
+	<!-- Login text -->
+
+	<file name="catalog/controller/common/header.php">
+	  <operation>
+			<search position="after"><![CDATA[$this->language->load('common/header');]]></search>
+				<add><![CDATA[
+		  $this->language->load('module/clearshop');
+		  ]]></add>
+		</operation>
+	  <operation>
+			<search position="replace"><![CDATA[$this->language->get('text_welcome')]]></search>
+			<add><![CDATA[
+		  $this->language->get('text_welcome_short')
+		  ]]></add>
+		</operation>
+
+		<operation>
+			<search position="replace"><![CDATA[$this->language->get('text_logged')]]></search>
+			<add><![CDATA[
+		  $this->language->get('text_logged_short')
+		  ]]></add>
+		</operation>
+
+		<operation>
+			<search position="before"><![CDATA[$this->render();]]></search>
+			<add><![CDATA[$this->data['mobilemenu_block'] = $module = $this->getChild('module/category_accordion', array(
+		));]]></add>
+		</operation>
+
+	</file>
+
+	<file name="catalog/controller/common/footer.php">
+		<operation>
+			<search position="before"><![CDATA[$this->render();]]></search>
+			<add><![CDATA[$this->data['twitter_block'] = $module = $this->getChild('module/twitter_feed', array(
+		));]]></add>
+		</operation>
+
+	</file>
+
+	<!-- Step circles on checkout page -->
+
+	<file name="catalog/language/english/checkout/checkout.php">
+		<operation>
+			<search position="replace"><![CDATA[Step 1:]]></search>
+			<add><![CDATA[<span class="step">1</span>]]></add>
+		</operation>
+
+		<operation>
+			<search position="replace"><![CDATA[Step 2:]]></search>
+			<add><![CDATA[<span class="step">2</span>]]></add>
+		</operation>
+
+		<operation>
+			<search position="replace"><![CDATA[Step 3:]]></search>
+			<add><![CDATA[<span class="step">3</span>]]></add>
+		</operation>
+
+		<operation>
+			<search position="replace"><![CDATA[Step 4:]]></search>
+			<add><![CDATA[<span class="step">4</span>]]></add>
+		</operation>
+
+		<operation>
+			<search position="replace"><![CDATA[Step 5:]]></search>
+			<add><![CDATA[<span class="step">5</span>]]></add>
+		</operation>
+
+		<operation>
+			<search position="replace"><![CDATA[Step 6:]]></search>
+			<add><![CDATA[<span class="step">6</span>]]></add>
+		</operation>
+	
+	</file>
+
+	<!-- Shown only number of items in a bubble o minicart -->
+
+	<file name="catalog/language/*/checkout/cart.php">
+		
+		<operation>
+			<search position="before"><![CDATA[$_['text_next']]]></search>
+			<add><![CDATA[$_['text_items']    = '<span class="badge count">%s</span><span class="total">%s</span>';]]></add>
+		</operation>
+
+	</file>
+
+
+	<file name="catalog/language/*/module/cart.php">
+		
+		<operation>
+			<search position="before"><![CDATA[$_['text_empty']]]></search>
+			<add><![CDATA[$_['text_items']    = '<span class="badge count">%s</span><span class="total">%s</span>';]]></add>
+		</operation>
+
+	</file>
+	
+</modification>
